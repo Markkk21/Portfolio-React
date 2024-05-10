@@ -8,8 +8,10 @@ const Dashboard = () => {
   return (
     <div>
       <DrawerAppBar/>
-      <Typography variant='h3'>I'm Mark,</Typography>
-      <Typography variant='subtitle1' >An Aspiring Front-End Developer.</Typography>
+      <Typography variant='h3' id="lblMark">I'm Mark,
+        <Typography variant='subtitle1' id="lblSubtitle">An Aspiring Front-End Developer.
+        </Typography>
+      </Typography>
     </div>
   );
 }

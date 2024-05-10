@@ -1,5 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
+import { Link } from 'react-router-dom'; // Import Link from React Router
 
 import { AppBar, 
   Box, 
@@ -19,7 +20,11 @@ import { AppBar,
 import MenuIcon from '@mui/icons-material/Menu';
 
 const drawerWidth = 200;
-const navItems = ['Home', 'Projects', 'About Me'];
+const navItems = [
+  { name: 'Home', path: '/' },
+  { name: 'Projects', path: '/projects' },
+  { name: 'About Me', path: '/about-me' }
+];
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -37,9 +42,9 @@ function DrawerAppBar(props) {
       <Divider />
       <List>
         {navItems.map((item) => (
-          <ListItem key={item} disablePadding>
-            <ListItemButton sx={{ textAlign: 'center' }}>
-              <ListItemText primary={item} />
+          <ListItem key={item.name} disablePadding>
+            <ListItemButton component={Link} to={item.path} sx={{ textAlign: 'center' }}> {/* Use Link component with the appropriate path */}
+              <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
         ))}
@@ -72,8 +77,8 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item} sx={{ color: '#fff' }}>
-                {item}
+              <Button key={item.name} component={Link} to={item.path} sx={{ color: '#fff' }}> {/* Use Link component with the appropriate path */}
+                {item.name}
               </Button>
             ))}
           </Box>

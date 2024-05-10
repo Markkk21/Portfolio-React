@@ -6,3 +6,17 @@
 #lblWorks {
     color: #d4af37;
 }
+
+#lblSubtitle {
+    color: #d4af37;
+    text-align: center;
+}
+
+#lblMark {
+    background-color: #282c34;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
+}
