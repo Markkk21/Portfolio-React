@@ -18,6 +18,7 @@ import { AppBar,
 } from '@mui/material';
 
 import MenuIcon from '@mui/icons-material/Menu';
+import MarkLogo from "../../img/Logo.png";
 
 const drawerWidth = 200;
 const navItems = [
@@ -36,7 +37,8 @@ function DrawerAppBar(props) {
 
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
-      <Typography variant="h4" sx={{ my: 2 }}>
+      <img src={MarkLogo} alt="Logo" id="logo"/>
+      <Typography variant="h4" sx={{ mb: 2 }}>
         Mark<span id='lblWorks'>Works</span>
       </Typography>
       <Divider />

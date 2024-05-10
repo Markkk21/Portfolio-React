@@ -2,16 +2,16 @@ import React from 'react';
 import { Typography } from '@mui/material';
 
 import Tline from '../Layout/Timeline';
-import DrawerAppBar from '../Layout/Navbar';
+import MarkLogo from "../../img/Logo.png";
 
 const Dashboard = () => {
   return (
-    <div>
-      <DrawerAppBar/>
-      <Typography variant='h3' id="lblMark">I'm Mark,
-        <Typography variant='subtitle1' id="lblSubtitle">An Aspiring Front-End Developer.
+    <div id="containerDashboard">
+      <img src={MarkLogo} alt="Logo" id="logoDashboard"/>
+        <Typography variant='h3' id="lblMark">I'm Mark,
+          <Typography variant='subtitle1' id="lblSubtitle">A Front-End Developer.
+          </Typography>
         </Typography>
-      </Typography>
     </div>
   );
 }

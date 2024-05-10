@@ -14,9 +14,46 @@
 
 #lblMark {
     background-color: #282c34;
+}
+
+#containerDashboard {
+    background-color: #282c34;
     display: flex;
     flex-direction: column;
     align-items: center;
     min-height: 100vh;
     justify-content: center;
 }
+
+#containerAbout {
+    background-color: #282c34;   
+    /* min-height: 100vh; */
+}
+
+#logo {
+    width: 10vh;
+    margin-top: 2vh;
+}
+
+#logoDashboard {
+    width: 25vh;
+    margin-top: -10vh;
+}
+
+#imageMe {
+    max-width:80%;
+    pointer-events: none;
+    border-radius: 3vh;
+    margin-left: 10%;
+}
+
+#containerInfo {
+    /* margin-top: -20; */
+    margin-top: 17vh;
+    /* margin-top: 15%; */
+}
+
+#lblAboutMe {
+    white-space: nowrap;
+}
+

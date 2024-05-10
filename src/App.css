@@ -1,7 +1,8 @@
-
 .App-header {
   background-color: #282c34;
+  min-height: 100vh;
   color: white;
+  font-family: 'Poppins', sans-serif; 
 }
 
 
