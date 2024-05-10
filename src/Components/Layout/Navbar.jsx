@@ -1,6 +1,6 @@
 import React from 'react';
 import PropTypes from 'prop-types';
-import { Link } from 'react-router-dom'; // Import Link from React Router
+import { Link, useLocation } from 'react-router-dom'; // Import Link and useLocation from React Router
 
 import { AppBar, 
   Box, 
@@ -30,9 +30,15 @@ const navItems = [
 function DrawerAppBar(props) {
   const { window } = props;
   const [mobileOpen, setMobileOpen] = React.useState(false);
+  const location = useLocation(); // Get the current location
 
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
+  };
+
+  const isCurrentPath = (path) => {
+    // Check if the current path matches the given path
+    return location.pathname === path;
   };
 
   const drawer = (
@@ -45,7 +51,11 @@ function DrawerAppBar(props) {
       <List>
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
-            <ListItemButton component={Link} to={item.path} sx={{ textAlign: 'center' }}> {/* Use Link component with the appropriate path */}
+            <ListItemButton 
+              component={Link} 
+              to={item.path} 
+              sx={{ textAlign: 'center', color: isCurrentPath(item.path) ? '#d4af37' : 'inherit' }} // Apply color based on the current path
+            >
               <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
@@ -79,7 +89,12 @@ function DrawerAppBar(props) {
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
             {navItems.map((item) => (
-              <Button key={item.name} component={Link} to={item.path} sx={{ color: '#fff' }}> {/* Use Link component with the appropriate path */}
+              <Button 
+                key={item.name} 
+                component={Link} 
+                to={item.path} 
+                sx={{ color: isCurrentPath(item.path) ? '#d4af37' : '#fff', }} // Apply color based on the current path
+              >
                 {item.name}
               </Button>
             ))}

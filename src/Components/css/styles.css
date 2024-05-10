@@ -55,5 +55,18 @@
 
 #lblAboutMe {
     white-space: nowrap;
+    margin:3vh 0 3vh 0;
+}
+
+#iconSocials {
+    text-decoration: none;
+    color: white;
+    font-size: 3vh;
+    margin: .5vh;
+}
+
+#lblSocials {
+    margin-top: 3vh;
+    color: #d4af37;
 }
 
