@@ -1,8 +1,8 @@
 import React from "react";
 import { Box } from '@material-ui/core';
 
-import logo from './logo.svg';
 import './App.css';
+import './Components/css/styles.css';
 
 import Dashboard from './Components/Pages/Dashboard';
 
@@ -12,10 +12,9 @@ function App() {
       <header className="App-header">
         <Box> 
           <Dashboard />
-        
         </Box>
       </header>
-    </div>
+      </div>
   );
 }
 
