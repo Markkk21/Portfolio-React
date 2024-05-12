@@ -12,10 +12,6 @@
     text-align: center;
 }
 
-#lblMark {
-    background-color: #282c34;
-}
-
 #containerDashboard {
     background-color: #282c34;
     display: flex;
@@ -33,6 +29,7 @@
 #logo {
     width: 10vh;
     margin-top: 2vh;
+
 }
 
 #logoDashboard {
@@ -69,4 +66,16 @@
     margin-top: 3vh;
     color: #d4af37;
 }
+
+#containerProject {
+    margin-top: 10vh;
+}
+
+#cardProject {
+    width: 100%;
+}
+
+
+
+
 

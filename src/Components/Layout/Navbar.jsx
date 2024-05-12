@@ -44,9 +44,9 @@ function DrawerAppBar(props) {
   const drawer = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <img src={MarkLogo} alt="Logo" id="logo"/>
-      <Typography variant="h4" sx={{ mb: 2 }}>
+      {/* <Typography variant="h4" sx={{ mb: 2 }}>
         Mark<span id='lblWorks'>Works</span>
-      </Typography>
+      </Typography> */}
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -83,7 +83,7 @@ function DrawerAppBar(props) {
           <Typography
             variant="h4"
             component="div"
-            sx={{ flexGrow: 1, display: { xs: 'none', sm: 'block', fontWeight: 'bold' } }}
+            sx={{ flexGrow: 1, display: { sm: 'block', fontWeight: 'bold' }}}
           >
             Mark<span id='lblWorks'>Works</span>
           </Typography>

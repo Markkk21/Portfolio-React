@@ -1,7 +1,6 @@
 import React, {useEffect} from 'react';
 import { Typography } from '@mui/material';
 
-import Tline from '../Layout/Timeline';
 import InformationBox from '../Layout/InformationBox';
 
 const AboutMe = () => {
@@ -9,6 +8,7 @@ const AboutMe = () => {
     <div id="containerAbout">
       {/* Add other content of your About Me page */}
       <InformationBox/>
+      
     </div>
   );
 };
