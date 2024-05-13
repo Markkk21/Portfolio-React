@@ -68,11 +68,15 @@
 }
 
 #containerProject {
-    margin-top: 10vh;
+    margin-top: 13vh;
 }
 
 #cardProject {
     width: 100%;
+}
+
+#buttonPDF {
+    font-size: 2vh;
 }
 
 

@@ -6,6 +6,7 @@ import GithubIcon from '@mui/icons-material/GitHub';
 import ViberIcon from '@mui/icons-material/WifiCalling3';
 
 import MyPhoto from '../../img/MyPhoto.png';
+import ResumeFile from '../Resume/Resume';
 
 function InfoBox() {
   return (
@@ -40,6 +41,7 @@ function InfoBox() {
                   <a id="iconSocials" href="tel:+639162580989" target="_blank" rel="noopener noreferrer">
                     <ViberIcon sx={{ fontSize: "5vh"}}/>
                   </a>
+                    <ResumeFile/>
               </Typography>
           
             </Grid>

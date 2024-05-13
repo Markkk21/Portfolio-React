@@ -10,6 +10,7 @@ import Dashboard from './Components/Pages/Dashboard';
 import DrawerAppBar from './Components/Layout/Navbar';
 import AboutMePage from './Components/Pages/AboutMe';
 import ProjectsPage from './Components/Pages/Projects';
+import QueueVistaDetails from './Components/Pages/QueueVista/QueueVistaDetails';
 
 function App() {
   return (
@@ -21,6 +22,7 @@ function App() {
               <Route path="/" element={<Dashboard />} />
               <Route path="/projects" element={<ProjectsPage />} />
               <Route path="/about-me" element={<AboutMePage />} />
+              <Route path="/queuevista-details" element={<QueueVistaDetails />} />
             </Routes>
           </header>
           </div>
