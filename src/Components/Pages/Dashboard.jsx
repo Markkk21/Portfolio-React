@@ -3,6 +3,7 @@ import { Typography } from '@mui/material';
 
 import Tline from '../Layout/Timeline';
 import MarkLogo from "../../img/Logo.png";
+import Typewriter from '../Layout/Type';
 
 const Dashboard = () => {
   return (
@@ -12,6 +13,7 @@ const Dashboard = () => {
           <Typography variant='subtitle1' id="lblSubtitle">A Front-End Developer.
           </Typography>
         </Typography>
+        <Typewriter text="Hello, world!" speed={100} />
     </div>
   );
 }

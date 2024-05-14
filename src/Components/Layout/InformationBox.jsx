@@ -6,7 +6,6 @@ import GithubIcon from '@mui/icons-material/GitHub';
 import ViberIcon from '@mui/icons-material/WifiCalling3';
 
 import MyPhoto from '../../img/MyPhoto.png';
-import ResumeFile from '../Resume/Resume';
 
 function InfoBox() {
   return (
@@ -28,7 +27,8 @@ function InfoBox() {
               <Typography variant="body1" sx={{ textAlign: { xs: 'center', lg: 'left' }}}>
                 <Typography>Hi, I'm a front-end developer with experience in programming a responsive website.</Typography>
  
-                <Typography variant='h5' id="lblSocials" >Connect with me</Typography>
+
+                <Typography variant='subtitle1' id="lblSocials" >Feel free to <d id="connect">connect</d> with me</Typography>
                   <a id="iconSocials" href="https://www.linkedin.com/in/mark-joshua-garcia/" target="_blank" rel="noopener noreferrer">
                     <LinkedInIcon sx={{ fontSize: "5vh"}}/>
                   </a>
@@ -41,7 +41,6 @@ function InfoBox() {
                   <a id="iconSocials" href="tel:+639162580989" target="_blank" rel="noopener noreferrer">
                     <ViberIcon sx={{ fontSize: "5vh"}}/>
                   </a>
-                    <ResumeFile/>
               </Typography>
           
             </Grid>

@@ -19,13 +19,19 @@ import { AppBar,
 
 import MenuIcon from '@mui/icons-material/Menu';
 import MarkLogo from "../../img/Logo.png";
+import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
+import IntegrationInstructionsOutlinedIcon from '@mui/icons-material/IntegrationInstructionsOutlined';
+import PersonOutlineOutlinedIcon from '@mui/icons-material/PersonOutlineOutlined';
+import FeedOutlinedIcon from '@mui/icons-material/FeedOutlined';
 
 const drawerWidth = 200;
 const navItems = [
-  { name: 'Home', path: '/' },
-  { name: 'Projects', path: '/projects' },
-  { name: 'About Me', path: '/about-me' }
+  { name: 'Home', path: '/', icon: <HomeOutlinedIcon /> },
+  { name: 'About', path: '/about-me', icon: <PersonOutlineOutlinedIcon /> },
+  { name: 'Projects', path: '/projects', icon: <IntegrationInstructionsOutlinedIcon /> },
+  { name: 'Resume', path: '/resume', icon: <FeedOutlinedIcon /> },
 ];
+
 
 function DrawerAppBar(props) {
   const { window } = props;
@@ -54,8 +60,9 @@ function DrawerAppBar(props) {
             <ListItemButton 
               component={Link} 
               to={item.path} 
-              sx={{ textAlign: 'center', color: isCurrentPath(item.path) ? '#d4af37' : 'inherit' }} // Apply color based on the current path
+              sx={{ color: isCurrentPath(item.path) ? '#d4af37' : 'inherit' }} // Apply color based on the current path
             >
+               {item.icon}
               <ListItemText primary={item.name} />
             </ListItemButton>
           </ListItem>
@@ -93,8 +100,9 @@ function DrawerAppBar(props) {
                 key={item.name} 
                 component={Link} 
                 to={item.path} 
-                sx={{ color: isCurrentPath(item.path) ? '#d4af37' : '#fff', }} // Apply color based on the current path
+                sx={{ color: isCurrentPath(item.path) ? '#d4af37' : '#fff', margin: "1.5vh" }} // Apply color based on the current path
               >
+                {item.icon}
                 {item.name}
               </Button>
             ))}
