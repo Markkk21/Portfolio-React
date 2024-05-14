@@ -1,18 +1,46 @@
 import React from 'react';
-import { AppBar, Toolbar, Typography, Link } from '@mui/material';
+import { Typography, Link, Grid } from '@mui/material';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
+import EmailIcon from '@mui/icons-material/AlternateEmail';
+import GithubIcon from '@mui/icons-material/GitHub';
 
 const Footer = () => {
   return (
-    <AppBar position="fixed" className="footerAppBar">
-      <Toolbar className="footerToolbar">
-        <Typography variant="body1" color="inherit" align="center">
-          © {new Date().getFullYear()} Your Company Name. All rights reserved.
-        </Typography>
-        <Link href="#" className="footerLink">Privacy Policy</Link>
-        <Link href="#" className="footerLink">Terms of Service</Link>
-        <Link href="#" className="footerLink">Contact Us</Link>
-      </Toolbar>
-    </AppBar>
+    <footer className="footer">
+      <Grid container >
+
+        <Grid xs={12} md={4}>
+          <Typography variant="subtitle2" color="inherit" align="center">
+            Designed and Developed by Mark Joshua Garcia
+          </Typography>
+        </Grid>
+
+        <Grid xs={12} md={4}>
+          <Typography variant="subtitle2" color="inherit" align="center">
+           Copyright © {new Date().getFullYear()} MarkWorks.
+          </Typography>
+        </Grid>
+        
+        <Grid xs={12} md={4}>
+          <a id="iconSocials" href="https://www.linkedin.com/in/mark-joshua-garcia/" target="_blank" rel="noopener noreferrer">
+            <LinkedInIcon sx={{width: "5vh"}}/>
+          </a>
+          <a id="iconSocials" href="https://www.github.com/Markkk21" target="_blank" rel="noopener noreferrer">
+            <GithubIcon sx={{width: "5vh"}}/>
+          </a>
+          <a id="iconSocials" href="mailto:markjoshuagarcia009@gmail.com" target="_blank" rel="noopener noreferrer">
+            <EmailIcon sx={{width: "5vh"}}/>
+          </a>
+        </Grid>
+
+      </Grid>
+
+      {/* <nav className="footer-nav">
+        <Link href="#" className="footer-link">Privacy Policy</Link>
+        <Link href="#" className="footer-link">Terms of Service</Link>
+        <Link href="#" className="footer-link">Contact Us</Link>
+      </nav> */}
+    </footer>
   );
 };
 

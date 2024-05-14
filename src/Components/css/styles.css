@@ -1,3 +1,5 @@
+/* Navbar */
+
 #navBar {
     background-color: #202129;
     /* box-shadow: none; */
@@ -6,6 +8,35 @@
 #lblWorks {
     color: #d4af37;
 }
+
+#logo {
+    width: 10vh;
+    margin-top: 2vh;
+}
+
+.navButton {
+    position: relative;
+    text-decoration: none;
+  }
+  
+.navButton::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -2px; 
+    width: 0;
+    height: 3px;
+    background-color: #d4af37; 
+    transition: width 0.5s ease; 
+    border-radius: 3vh;
+}
+  
+.navButton:hover::after {
+    width: 100%; 
+}
+  
+
+/* Dashboard */
 
 #lblSubtitle {
     color: #d4af37;
@@ -21,20 +52,20 @@
     justify-content: center;
 }
 
-#containerAbout {
-    background-color: #282c34;   
-    /* min-height: 100vh; */
-}
-
-#logo {
-    width: 10vh;
-    margin-top: 2vh;
-
-}
-
 #logoDashboard {
     width: 25vh;
     margin-top: -10vh;
+}
+
+/* About */
+
+#containerAbout {
+    background-color: #282c34;   
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
 }
 
 #imageMe {
@@ -44,11 +75,11 @@
     margin-left: 10%;
 }
 
-#containerInfo {
-    /* margin-top: -20; */
-    margin-top: 17vh;
-    /* margin-top: 15%; */
-}
+/* #containerInfo {
+    margin-top: -20;
+    margin-top: 14vh;
+    margin-top: 15%;
+} */
 
 #lblAboutMe {
     white-space: nowrap;
@@ -70,17 +101,63 @@
     color: #d4af37;
 }
 
+
+/* Projects */
+
 #containerProject {
-    margin-top: 13vh;
+    background-color: #282c34; 
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+    justify-content: center;
 }
 
 #cardProject {
     width: 100%;
 }
 
-#buttonPDF {
-    font-size: 2vh;
+
+/* Footer */
+
+.footer {
+    background-color: #202129;
+    color: #fff;
+    padding: 1.5vh;
+    text-align: center;
+    bottom: 0;
+    width: 100%;
 }
+  
+.footer-nav {
+    margin-top: 10px;
+}
+  
+
+/* ScrollBar */
+
+::-webkit-scrollbar {
+  width: 7px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #434b58;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #737794;
+  border-radius: 12px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background:  #8489aa;
+  border-radius: 12px;
+}
+  
+
 
 
 

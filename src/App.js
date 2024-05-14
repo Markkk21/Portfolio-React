@@ -12,13 +12,13 @@ import AboutMePage from './Components/Pages/AboutMe';
 import ProjectsPage from './Components/Pages/Projects';
 import ResumePage from './Components/Pages/Resume';
 import QueueVistaDetails from './Components/Pages/QueueVista/QueueVistaDetails';
+import Footer from './Components/Layout/Footer';
 
 function App() {
   return (
     <Router>
         <div className="App">
-          <header className="App-header">
-          <DrawerAppBar/> 
+        <DrawerAppBar/> 
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/projects" element={<ProjectsPage />} />
@@ -26,7 +26,7 @@ function App() {
               <Route path="/resume" element={<ResumePage />} />
               <Route path="/queuevista-details" element={<QueueVistaDetails />} />
             </Routes>
-          </header>
+            <Footer/>
           </div>
     </Router>
   );

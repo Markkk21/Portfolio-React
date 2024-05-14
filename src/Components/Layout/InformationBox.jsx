@@ -38,9 +38,6 @@ function InfoBox() {
                   <a id="iconSocials" href="mailto:markjoshuagarcia009@gmail.com" target="_blank" rel="noopener noreferrer">
                     <EmailIcon sx={{ fontSize: "5vh"}}/>
                   </a>
-                  <a id="iconSocials" href="tel:+639162580989" target="_blank" rel="noopener noreferrer">
-                    <ViberIcon sx={{ fontSize: "5vh"}}/>
-                  </a>
               </Typography>
           
             </Grid>

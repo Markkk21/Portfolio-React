@@ -10,10 +10,9 @@ const Dashboard = () => {
     <div id="containerDashboard">
       <img src={MarkLogo} alt="Logo" id="logoDashboard"/>
         <Typography variant='h3' id="lblMark">I'm Mark,
-          <Typography variant='subtitle1' id="lblSubtitle">A Front-End Developer.
+          <Typography variant='subtitle1' id="lblSubtitle"><Typewriter/>
           </Typography>
         </Typography>
-        <Typewriter text="Hello, world!" speed={100} />
     </div>
   );
 }
