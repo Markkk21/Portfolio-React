@@ -1,7 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Typography, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
-import MyPhoto from '../../../img/QueueVista/HomePC.jpeg';
+import MyPhoto from '../../../img/QueueVista/QueueVista.png';
+import Laravel from '../../../img/Logo/Laravel.png';
+import MySQL from '../../../img/Logo/Mysql.png';
+import Bootstrap from '../../../img/Logo/Bootstrap.png';
 
 function QueueVista() {
   return (
@@ -18,9 +21,23 @@ function QueueVista() {
             <Typography gutterBottom variant="h6" component="div">
               QueueVista - Digital Waiting Aide
             </Typography>
-            <Typography variant="body2" color="text.secondary">
+            <Typography variant="body2">
               This capstone project consists of 4 members, it is a web-based queue management system that can be also used in mobile web browser.
             </Typography>
+
+            {/* Logo Area */}
+            <Grid container spacing={2} justifyContent="flex-end" sx={{mt:.2 }} >
+              <Grid item xs={2} md={2}>
+                <CardMedia component="img" src={Laravel} alt="Laravel"/>
+              </Grid>
+              <Grid item xs={2} md={2}>
+                <CardMedia component="img" src={Bootstrap} alt="Bootstrap"/>
+              </Grid>
+              <Grid item xs={2} md={2}>
+                <CardMedia component="img" src={MySQL} alt="MySQL"/>
+              </Grid>
+            </Grid>
+
           </CardContent>
         </CardActionArea>
       </Card>

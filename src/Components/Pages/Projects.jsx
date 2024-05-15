@@ -6,28 +6,31 @@ function ProjectList() {
   return (
     <div id="containerProject">
         <Grid container spacing={2}>
-
             {/* Projects */}
-            <Grid item xs={12} sm={4}>
-                <Card id="cardProject">
-                    <QueueVista/>
-                </Card>
+            <Grid item xs={12} md={4}>
+              <Card id='projectBox'>
+                <QueueVista/>
+              </Card>
             </Grid>
 
             {/* Projects */}
-            <Grid item xs={12} sm={4}>
-
+            <Grid item xs={12} md={4}>
+              <Card id='projectBox'>
+                <QueueVista/>
+              </Card>
             </Grid>
         
             {/* Projects */}
-            <Grid item xs={12} sm={4}>
-
+            <Grid item xs={12} md={4}>
+              <Card id='projectBox'>
+                <QueueVista/>
+              </Card>
             </Grid>
 
 
   
         </Grid>
-    </div>
+        </div>
   );
 };
 export default ProjectList;

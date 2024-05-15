@@ -1,6 +1,5 @@
 # Portfolio Website
 
-
 ## Built With
 
 My personal portfolio which features some of my projects as well as my resume and technical skills.<br/>
@@ -12,6 +11,7 @@ This project was built using:
 - CSS
 - JavaScript
 - VsCode
+- Github
   
 
 **📱 Fully Responsive**

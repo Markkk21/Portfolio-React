@@ -42,6 +42,11 @@
 #lblSubtitle {
     color: #d4af37;
     text-align: center;
+    pointer-events: none;
+}
+
+#lblMark {
+    pointer-events: none;
 }
 
 #containerDashboard {
@@ -104,6 +109,17 @@
 
 /* Projects */
 
+@media (orientation: portrait) {
+    #containerProject {
+        margin-top: 20%;
+    }
+
+    #projectBox {
+        margin-bottom: 10%;
+    }
+}
+  
+
 #containerProject {
     display: flex;
     flex-direction: column;
@@ -116,11 +132,28 @@
     width: 100%;
 }
 
+#projectBox {
+    box-shadow: 0 4px 5px 3px #725d1f;
+    color: white;
+    background-color: transparent;
+    opacity: 0.9;
+    transition: all 0.5s ease 0s;
+    width: 80%;
+    margin-left: 10%;
+
+}
+
+#projectBox:hover {
+    transform: scale(1.02);
+    overflow: hidden;
+    box-shadow: 0 4px 4px 5px #7a6421;
+}
+
 
 /* Footer */
 
 .footer {
-    background-color: #1b1b1b;
+    background-color: #111111;
     color: #fff;
     padding: 1.5vh;
     text-align: center;
