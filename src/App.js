@@ -21,6 +21,7 @@ function App() {
         <DrawerAppBar/> 
             <Routes>
               <Route path="/" element={<Dashboard />} />
+              <Route path="/Portfolio-React" element={<Dashboard />} />
               <Route path="/projects" element={<ProjectsPage />} />
               <Route path="/about-me" element={<AboutMePage />} />
               <Route path="/resume" element={<ResumePage />} />
