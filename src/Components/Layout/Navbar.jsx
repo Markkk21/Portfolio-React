@@ -1,22 +1,7 @@
-import React from 'react';
+import React, { useState, useEffect } from 'react';
 import PropTypes from 'prop-types';
-import { Link, useLocation } from 'react-router-dom'; // Import Link and useLocation from React Router
-
-import { AppBar, 
-  Box, 
-  CssBaseline, 
-  Divider, 
-  Drawer, 
-  IconButton, 
-  List, 
-  ListItem, 
-  ListItemButton, 
-  ListItemText, 
-  Toolbar, 
-  Typography, 
-  Button  
-} from '@mui/material';
-
+import { Link, useLocation } from 'react-router-dom';
+import { AppBar, Box, CssBaseline, Divider, Drawer, IconButton, List, ListItem, ListItemButton, ListItemText, Toolbar, Typography, Button } from '@mui/material';
 import MenuIcon from '@mui/icons-material/Menu';
 import MarkLogo from "../../img/Logo.png";
 import HomeOutlinedIcon from '@mui/icons-material/HomeOutlined';
@@ -32,27 +17,22 @@ const navItems = [
   { name: 'Resume', path: '/resume', icon: <FeedOutlinedIcon /> },
 ];
 
-
-function DrawerAppBar(props) {
-  const { window } = props;
-  const [mobileOpen, setMobileOpen] = React.useState(false);
-  const location = useLocation(); // Get the current location
-
+function Navbar(props) {
+  const { window, navColor } = props; // Accept navColor prop
+  const [mobileOpen, setMobileOpen] = useState(false);
+  const location = useLocation();
+  
   const handleDrawerToggle = () => {
     setMobileOpen((prevState) => !prevState);
   };
 
   const isCurrentPath = (path) => {
-    // Check if the current path matches the given path
     return location.pathname === path;
   };
 
-  const drawer = (
+  const drawerContent = (
     <Box onClick={handleDrawerToggle} sx={{ textAlign: 'center' }}>
       <img src={MarkLogo} alt="Logo" id="logo"/>
-      {/* <Typography variant="h4" sx={{ mb: 2 }}>
-        Mark<span id='lblWorks'>Works</span>
-      </Typography> */}
       <Divider />
       <List>
         {navItems.map((item) => (
@@ -76,7 +56,7 @@ function DrawerAppBar(props) {
   return (
     <Box sx={{ display: 'flex'}}>
       <CssBaseline />
-      <AppBar component="nav" id="navBar">
+      <AppBar component="nav" id="navBar" className={navColor ? 'sticky' : 'navbar'}>
         <Toolbar>
           <IconButton
             color="inherit"
@@ -125,19 +105,16 @@ function DrawerAppBar(props) {
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, backgroundColor: '#1c1e24', color: 'white' },
           }}
         >
-          {drawer}
+          {drawerContent}
         </Drawer>
       </nav>
     </Box>
   );
 }
 
-DrawerAppBar.propTypes = {
-  /**
-   * Injected by the documentation to work in an iframe.
-   * You won't need it on your project.
-   */
+Navbar.propTypes = {
   window: PropTypes.func,
+  navColor: PropTypes.bool // Define prop types
 };
 
-export default DrawerAppBar;
+export default Navbar;

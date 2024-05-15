@@ -7,8 +7,8 @@ function Type() {
       options={{
         strings: [
           "Front-End Developer.",
-          "Gamer.",
           "Web Developer.",
+          "Gamer.",
           // "Text Here", If want to add another text
         ],
         autoStart: true,

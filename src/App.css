@@ -1,6 +1,12 @@
 .App {
-  background-color: #282c34;
-  min-height: 100vh;
+  /* background-color: #282c34; */
+  background-image: url(./img/bg.jpg);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-size: cover;
+  /* background; */
+  min-height: 100vh;  
   color: white;
   font-family: 'Poppins', sans-serif; 
 }

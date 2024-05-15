@@ -1,11 +1,17 @@
 import React from 'react';
 import { Grid } from '@mui/material';
 
+import Tline from '../../Layout/Timeline';
+
 function QueueVistaDetails() {
   return (
-    <Grid sx={{mt: 50}}>
+    <div>
+    <Grid >
+    <Tline/>
       QueueVista Details
+
     </Grid>
+    </div>
   );
 };
 
