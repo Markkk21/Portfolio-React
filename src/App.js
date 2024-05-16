@@ -1,5 +1,4 @@
-import React, { useEffect } from "react";
-import { Box } from '@material-ui/core';
+import React, { useState, useEffect } from "react";
 
 import './App.css';
 import './Components/css/styles.css';
@@ -13,11 +12,24 @@ import ProjectsPage from './Components/Pages/Projects';
 import ResumePage from './Components/Pages/Resume';
 import QueueVistaDetails from './Components/Pages/QueueVista/QueueVistaDetails';
 import Footer from './Components/Layout/Footer';
+import Preloader from './Components/Layout/Pre';
 
 function App() {
+  const [load, updateLoad] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      updateLoad(false);
+    }, 1100);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+
   return (
     <Router>
-        <div className="App">
+      <Preloader load={load}/>
+        <div className="App" id={load ? "no-scroll" : "scroll"}>
           <DrawerAppBar/> 
             <Routes>
               <Route path="/" element={<Dashboard />} />

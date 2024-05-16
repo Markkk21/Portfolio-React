@@ -40,7 +40,7 @@ function Navbar(props) {
             <ListItemButton 
               component={Link} 
               to={item.path} 
-              sx={{ color: isCurrentPath(item.path) ? '#d4af37' : 'inherit', textAlign: 'center'}} // Apply color based on the current path
+              sx={{ color: isCurrentPath(item.path) ? '#d4af37' : 'inherit'}} // Apply color based on the current path
             >
                {item.icon}
               <ListItemText primary={item.name} />
@@ -102,7 +102,8 @@ function Navbar(props) {
           }}
           sx={{
             display: { xs: 'block', sm: 'none' },
-            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, backgroundColor: '#1c1e24', color: 'white' },
+            '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', backdropFilter: 'blur(15px)' },    
+            '& .MuiTypography-root': { fontSize: '2vh', ml: 2, },
           }}
         >
           {drawerContent}
