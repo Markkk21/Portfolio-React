@@ -25,12 +25,17 @@ function App() {
     return () => clearTimeout(timer);
   }, []);
 
-
   return (
     <Router>
+      
+      {/* Loading Screen */}
       <Preloader load={load}/>
         <div className="App" id={load ? "no-scroll" : "scroll"}>
+          
+          {/* Navbar */}
           <DrawerAppBar/> 
+            
+            {/* Routes */}
             <Routes>
               <Route path="/" element={<Dashboard />} />
               <Route path="/Portfolio-React" element={<Dashboard />} />
@@ -39,8 +44,10 @@ function App() {
               <Route path="/resume" element={<ResumePage />} />
               <Route path="/queuevista-details" element={<QueueVistaDetails />} />
             </Routes>
-            <Footer/>
-          </div>
+
+          {/* Footer */}
+          <Footer/>
+        </div>
     </Router>
   );
 }

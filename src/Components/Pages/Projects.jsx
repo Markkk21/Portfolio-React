@@ -1,6 +1,8 @@
 import * as React from 'react';
 import { Grid, Card} from '@mui/material';
 import QueueVista from './QueueVista/QueueVista';
+import Aims from './AimsUI/Aims';
+import AssetPRO from './AssetPRO/AssetPRO';
 
 function ProjectList() {
   return (
@@ -16,14 +18,14 @@ function ProjectList() {
             {/* Projects */}
             <Grid item xs={12} md={4}>
               <Card id='projectBox'>
-                <QueueVista/>
+                <Aims/>
               </Card>
             </Grid>
         
             {/* Projects */}
             <Grid item xs={12} md={4}>
               <Card id='projectBox'>
-                <QueueVista/>
+                <AssetPRO/>
               </Card>
             </Grid>
 
