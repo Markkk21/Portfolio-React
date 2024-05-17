@@ -18,7 +18,7 @@ function Aims() {
             alt="AIMS"
           />
           <CardContent>
-            <Typography gutterBottom variant="h6" component="div"> 
+            <Typography gutterBottom variant="h6" component="div" id='lblTitle'> 
               AIMS - Asset Inventory Management System
             </Typography>
             <Typography variant="body2">

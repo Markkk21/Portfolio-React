@@ -71,8 +71,8 @@ function Navbar(props) {
             variant="h4"
             component="div"
             sx={{ flexGrow: 1, display: { sm: 'block', fontWeight: 'bold' }}}
-          ><Link to="/" style={{ textDecoration: 'none', color: 'inherit' }}>
-            Mark<span id='lblWorks'>Works.</span>
+          ><Link to="/" style={{ textDecoration: 'none', color: 'inherit',  }}>
+            Mark<span id='lblYellow'>Works.</span>
           </Link>
           </Typography>
           <Box sx={{ display: { xs: 'none', sm: 'block' } }}>
@@ -82,7 +82,7 @@ function Navbar(props) {
                 key={item.name} 
                 component={Link} 
                 to={item.path} 
-                sx={{ color: isCurrentPath(item.path) ? '#d4af37' : '#fff', margin: "1.2vh" }} // Apply color based on the current path
+                sx={{ color: isCurrentPath(item.path) ? '#d4af37' : '#fff', margin: "1.2vh"}} // Apply color based on the current path
               >
                 {item.icon}
                 {item.name}

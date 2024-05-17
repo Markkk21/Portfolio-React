@@ -18,7 +18,7 @@ function AssetPRO() {
             alt="AssetPRO"
           />
           <CardContent>
-            <Typography gutterBottom variant="h6" component="div"> 
+            <Typography gutterBottom variant="h6" component="div" id='lblTitle'> 
               AssetPRO
             </Typography>
             <Typography variant="body2">

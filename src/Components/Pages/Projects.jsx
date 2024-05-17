@@ -1,12 +1,17 @@
 import * as React from 'react';
-import { Grid, Card} from '@mui/material';
+import { Grid, Card, Typography, Container} from '@mui/material';
 import QueueVista from './QueueVista/QueueVista';
 import Aims from './AimsUI/Aims';
 import AssetPRO from './AssetPRO/AssetPRO';
+// import { Toys } from '@mui/icons-material';
 
 function ProjectList() {
   return (
     <div id="containerProject">
+      <Container item xs={12}>
+        <Typography id="lblProjects">My Recent <span id='lblYellow'>Works</span></Typography>
+        <Typography id="lblProjectDesc">Here are a few projects I've worked on recently.</Typography>
+      </Container>
         <Grid container spacing={2}>
             {/* Projects */}
             <Grid item xs={12} md={4}>
@@ -28,10 +33,9 @@ function ProjectList() {
                 <AssetPRO/>
               </Card>
             </Grid>
-
-
-  
+            
         </Grid>
+        
         </div>
   );
 };

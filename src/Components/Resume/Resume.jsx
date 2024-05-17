@@ -20,7 +20,7 @@ const ResumeFile = () => {
     <div>
       <IconButton onClick={handleDownload} sx={{ color: "white", margin: ".5vh" }}>
         <CloudDownloadIcon fontSize="large" />
-        <Typography variant="subtitle2" sx={{ color: "white", ml: ".5vh" }}>Download Resume</Typography>
+        <Typography variant="subtitle2" sx={{ color: "white", ml: ".5vh" }}>Download Résumé</Typography>
       </IconButton>
     </div>
   );

@@ -3,29 +3,14 @@ import { Grid, Typography } from '@mui/material';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/AlternateEmail';
 import GithubIcon from '@mui/icons-material/GitHub';
-import ViberIcon from '@mui/icons-material/WifiCalling3';
-
-import MyPhoto from '../../img/MyPhoto.png';
 
 function InfoBox() {
   return (
     
     <div id="containerInfo">
-        <Grid container spacing={2}>
-
-            {/* Image */}
-            <Grid item xs={12} sm={5}>
-                <img src={MyPhoto} alt="Mj" id="imageMe" />
-            </Grid>
-        
-            {/* Info */}
-            <Grid item xs={12} sm={5}>
-            <Typography variant="h4" id="lblAboutMe" 
-            sx={{ textAlign: { xs: 'center', lg: 'left' }}}
-            >Mark Joshua Garcia
-            </Typography>
+        <Grid>
               <Typography variant="body1" sx={{ textAlign: { xs: 'center', lg: 'left' }}}>
-                <Typography>Hi, I'm a front-end developer with experience in programming a responsive website.</Typography>
+                <Typography>Hi! I'm <span id='lblYellow'>Mark Joshua Garcia</span>, a front-end developer with experience in programming a responsive website.</Typography>
  
 
                 <Typography variant='subtitle1' id="lblSocials" >Feel free to <d id="connect">connect</d> with me</Typography>
@@ -41,7 +26,6 @@ function InfoBox() {
               </Typography>
           
             </Grid>
-        </Grid>
     </div>
   );
 }

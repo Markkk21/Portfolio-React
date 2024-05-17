@@ -18,7 +18,7 @@ function QueueVista() {
             alt="QueueVista"
           />
           <CardContent>
-            <Typography gutterBottom variant="h6" component="div">
+            <Typography gutterBottom variant="h6" component="div" id='lblTitle'>
               QueueVista - Digital Waiting Aide
             </Typography>
             <Typography variant="body2">
