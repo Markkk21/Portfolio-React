@@ -12,6 +12,7 @@ This project was built using:
 - JavaScript
 - VsCode
 - Github
+- HTML
   
 
 **📱 Fully Responsive**
