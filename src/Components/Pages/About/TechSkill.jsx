@@ -12,6 +12,7 @@ import {
   SiPhp,
   SiBootstrap,
   SiLaravel,
+  SiMui,
 } from "react-icons/si";
 import { TbBrandReactNative  } from "react-icons/tb";
 
@@ -29,6 +30,9 @@ function TechSkill() {
       </Grid>
       <Grid item xs={4} md={2} className="tech-icons">
         <DiReact />
+      </Grid>
+      <Grid item xs={4} md={2} className="tech-icons">
+        <SiMui />
       </Grid>
       <Grid item xs={4} md={2} className="tech-icons">
         <SiPhp />

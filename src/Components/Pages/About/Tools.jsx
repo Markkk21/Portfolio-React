@@ -1,16 +1,16 @@
 import React from "react";
-import { Grid, Typography } from "@mui/material";
+import { Grid } from "@mui/material";
 import {
   SiVisualstudiocode,
   SiPostman,
   SiMysql,
   SiGithub,
-  SiCisco
+  SiFigma,
 } from "react-icons/si";
 
 function Tools() {
   return (
-    <Grid container spacing={2} justifyContent="center" sx={{ paddingBottom: "50px" }}>
+    <Grid container spacing={2} justifyContent="center" sx={{ paddingBottom: "5%" }}>
       <Grid item xs={4} md={2} className="tech-icons">
         <SiVisualstudiocode />
       </Grid>
@@ -24,7 +24,7 @@ function Tools() {
         <SiGithub />
       </Grid>
       <Grid item xs={4} md={2} className="tech-icons">
-        <SiCisco />
+        <SiFigma />
       </Grid>
     </Grid>
   );

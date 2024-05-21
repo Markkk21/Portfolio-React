@@ -6,6 +6,7 @@ import InformationBox from '../../Layout/InformationBox';
 
 import Techstack from "./TechSkill";
 import Tools from './Tools';
+import Github from './Github';
 
 const AboutMe = () => {
   return (
@@ -52,6 +53,8 @@ const AboutMe = () => {
         </Typography>
 
         <Tools/>
+
+        <Github/>
 
       </Container>
     </Container>
