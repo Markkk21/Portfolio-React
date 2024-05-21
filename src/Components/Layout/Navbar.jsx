@@ -71,7 +71,7 @@ function Navbar(props) {
             variant="h4"
             component="div"
             sx={{ flexGrow: 1, display: { sm: 'block', fontWeight: 'bold' }}}
-          ><Link to="/" style={{ textDecoration: 'none', color: 'inherit',  }}>
+          ><Link to="/" style={{ textDecoration: 'none', color: 'inherit',  }} id='lblNavMark'>
             Mark<span id='lblYellow'>Works.</span>
           </Link>
           </Typography>
@@ -103,7 +103,7 @@ function Navbar(props) {
           sx={{
             display: { xs: 'block', sm: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', backdropFilter: 'blur(15px)' },    
-            '& .MuiTypography-root': { fontSize: '2vh', ml: 2, },
+            '& .MuiTypography-root': { fontSize: '2vh', ml: 2, fontFamily: 'Raleway'},
           }}
         >
           {drawerContent}

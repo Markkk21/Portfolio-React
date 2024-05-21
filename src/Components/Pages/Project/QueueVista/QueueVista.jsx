@@ -1,10 +1,10 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Typography, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
-import MyPhoto from '../../../img/QueueVista/QueueVista.png';
-import Laravel from '../../../img/Logo/Laravel.png';
-import MySQL from '../../../img/Logo/Mysql.png';
-import Bootstrap from '../../../img/Logo/Bootstrap.png';
+import MyPhoto from '../../../../img/QueueVista/QueueVista.png';
+import Laravel from '../../../../img/Logo/Laravel.png';
+import MySQL from '../../../../img/Logo/Mysql.png';
+import Bootstrap from '../../../../img/Logo/Bootstrap.png';
 
 function QueueVista() {
   return (

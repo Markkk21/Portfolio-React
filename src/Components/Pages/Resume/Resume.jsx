@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import ResumeFile from '../Resume/Resume';
+import ResumeFile from './ResumeDownload/Resume';
 
 const ResumePage = () => {
   return (

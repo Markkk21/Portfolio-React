@@ -1,28 +1,28 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Typography, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
-import MyPhoto from '../../../img/AssetPRO/AssetPRO.png';
-import ReactJS from '../../../img/Logo/ReactJS.png';
-import MUI from '../../../img/Logo/MUI.png';
+import MyPhoto from '../../../../img/AIMS/AIMS.png';
+import ReactJS from '../../../../img/Logo/ReactJS.png';
+import MUI from '../../../../img/Logo/MUI.png';
 // import Bootstrap from '../../../img/Logo/Bootstrap.png';
 
-function AssetPRO() {
+function Aims() {
   return (
     <Grid>
       {/* Projects */}
-      <Card component={Link} to="/assetpro-details" style={{ textDecoration: 'none', color: 'inherit'}}>
+      <Card component={Link} to="/aims-details" style={{ textDecoration: 'none', color: 'inherit'}}>
         <CardActionArea>
           <CardMedia
             component="img"
             src={MyPhoto}
-            alt="AssetPRO"
+            alt="AIMS"
           />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div" id='lblTitle'> 
-              AssetPRO
+              AIMS - Asset Inventory Management System
             </Typography>
             <Typography variant="body2">
-            AssetPRO is a project of Golden Aurum System Solution Inc. During my internship, I was assigned to make the Ingress/Egress page responsive for mobile devices.
+            AIMS is a project of Golden Aurum System Solution Inc. During my internship, I was assigned to improve the system's responsiveness, design the login page, and enhance the error pages.
             </Typography>
 
             {/* Logo Area */}
@@ -45,4 +45,4 @@ function AssetPRO() {
   );
 };
 
-export default AssetPRO;
+export default Aims;

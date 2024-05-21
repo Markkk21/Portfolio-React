@@ -21,7 +21,7 @@ const Footer = () => {
           </Typography>
         </Grid>
         
-        <Grid xs={12} md={4}>
+        <Grid xs={12} md={4} mt={1}>
           <a id="iconSocials" href="https://www.linkedin.com/in/mark-joshua-garcia/" target="_blank" rel="noopener noreferrer">
             <LinkedInIcon sx={{width: "5vh"}}/>
           </a>

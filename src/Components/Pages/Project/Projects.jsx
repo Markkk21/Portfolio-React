@@ -9,7 +9,9 @@ function ProjectList() {
   return (
     <div id="containerProject">
       <Container item xs={12}>
-        <Typography id="lblProjects">My Recent <span id='lblYellow'>Works</span></Typography>
+        <Typography variant='h3' textAlign='center' mb={2}>
+          My Recent <strong id='lblYellow'>Projects</strong>
+        </Typography>
         <Typography id="lblProjectDesc">Here are a few projects I've worked on recently.</Typography>
       </Container>
         <Grid container spacing={2}>

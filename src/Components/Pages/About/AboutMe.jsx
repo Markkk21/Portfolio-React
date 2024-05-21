@@ -1,8 +1,11 @@
 import React, {useEffect} from 'react';
 import { Typography, Grid, Container } from '@mui/material';
 
-import MyPhoto from '../../img/MyPhoto.png';
-import InformationBox from '../Layout/InformationBox';
+import MyPhoto from '../../../img/MyPhoto.png';
+import InformationBox from '../../Layout/InformationBox';
+
+import Techstack from "./TechSkill";
+import Tools from './Tools';
 
 const AboutMe = () => {
   return (
@@ -18,7 +21,7 @@ const AboutMe = () => {
             paddingTop="30px"
             paddingBottom="50px"
           >
-            <Typography variant="h4" gutterBottom>
+            <Typography variant="h3" gutterBottom>
             Get to Know <strong id='lblYellow'>Me</strong>
             </Typography>
 
@@ -37,8 +40,21 @@ const AboutMe = () => {
             <img src={MyPhoto} alt="about" style={{ maxWidth: "100%", height: "auto" }} />
           </Grid>
         </Grid>
-        </Container>
-        </Container>
+
+        <Typography variant='h3' textAlign='center' mb={2} mt={1}>
+          Technical <strong id='lblYellow'>Skills </strong>
+        </Typography>
+
+        <Techstack/>
+
+        <Typography variant='h3' textAlign='center' mb={2}>
+        <strong id='lblYellow'>Tools </strong>I use
+        </Typography>
+
+        <Tools/>
+
+      </Container>
+    </Container>
   );
 };
 

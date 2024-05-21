@@ -2,15 +2,16 @@ import React, { useState, useEffect } from "react";
 
 import './App.css';
 import './Components/css/styles.css';
+import './Components/css/font.css'; 
 
 import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Dashboard from './Components/Pages/Dashboard';
 import DrawerAppBar from './Components/Layout/Navbar';
-import AboutMePage from './Components/Pages/AboutMe';
-import ProjectsPage from './Components/Pages/Projects';
-import ResumePage from './Components/Pages/Resume';
-import QueueVistaDetails from './Components/Pages/QueueVista/QueueVistaDetails';
+import AboutMePage from './Components/Pages/About/AboutMe';
+import ProjectsPage from './Components/Pages/Project/Projects';
+import ResumePage from './Components/Pages/Resume/Resume';
+import QueueVistaDetails from './Components/Pages/Project/QueueVista/QueueVistaDetails';
 import Footer from './Components/Layout/Footer';
 import Preloader from './Components/Layout/Pre';
 
