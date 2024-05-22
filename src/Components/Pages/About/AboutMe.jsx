@@ -1,5 +1,5 @@
 import React, {useEffect} from 'react';
-import { Typography, Grid, Container } from '@mui/material';
+import { Typography, Grid, Container, Card } from '@mui/material';
 
 import MyPhoto from '../../../img/MyPhoto.png';
 import InformationBox from '../../Layout/InformationBox';
@@ -38,7 +38,11 @@ const AboutMe = () => {
             paddingTop="120px"
             paddingBottom="50px"
           >
-            <img src={MyPhoto} alt="about" style={{ maxWidth: "100%", height: "auto" }} />
+            <Grid>
+              <Card id='photoBox'>
+                <img src={MyPhoto} alt="about" style={{ maxWidth: "100%", height: "auto" }} />
+              </Card>
+            </Grid>
           </Grid>
         </Grid>
 

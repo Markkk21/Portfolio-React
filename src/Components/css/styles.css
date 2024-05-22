@@ -8,7 +8,10 @@
 }
 
 #lblYellow {
-    color: #d4af37;
+    color: #d1ac00;
+    /* color: #004643; */
+    /* color: #FAF4D3; */
+    /* color: #d4af37; */
 }
 
 #logo {
@@ -107,18 +110,20 @@
     margin-top: 3vh;
 }
 
-#connect {
-    color: #d4af37;
-}
-
 .about-section {
     position: relative;
-    padding-top: 150px;
+    padding-top: 110px;
     padding-bottom: 30px;
     color: white;
     min-height: 100vh;
 
 }
+
+#photoBox {
+    box-shadow: 0 4px 5px 3px #725d1f;
+    background-color: transparent;
+}
+
 
 
 /* Technical Skill About */
@@ -133,7 +138,7 @@
     text-align: center !important;
     border-radius: 5px !important;
     display: table !important;
-    box-shadow: 4px 5px 4px 3px rgba(49, 41, 13, 0.637) !important;
+    box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637) !important;
     overflow: hidden !important;
     transition: all 0.4s ease 0s !important;
   }
@@ -216,7 +221,7 @@
 /* Footer */
 
 .footer {
-    background-color: #111111;
+    background-color: rgba(17, 17, 17, 0.61);
     color: #fff;
     text-align: center;
     bottom: 0;

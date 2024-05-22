@@ -10,7 +10,7 @@ const Dashboard = () => {
     <div id="containerDashboard">
       <Tilt><img src={MarkLogo} alt="Logo" id="logoDashboard"/></Tilt>
         <Typography variant='h3' id="lblMark">I'm Mark,
-          <Typography variant='h6' id="lblSubtitle"><Typewriter/>
+          <Typography variant='body1' id="lblSubtitle"><Typewriter/>
           </Typography>
         </Typography>
     </div>

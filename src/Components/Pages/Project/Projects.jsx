@@ -12,7 +12,7 @@ function ProjectList() {
         <Typography variant='h3' textAlign='center' mb={2}>
           My Recent <strong id='lblYellow'>Projects</strong>
         </Typography>
-        <Typography id="lblProjectDesc">Here are a few projects I've worked on recently.</Typography>
+        <Typography id="lblProjectDesc">Here are <strong id='lblYellow'>projects</strong> I've worked on recently.</Typography>
       </Container>
         <Grid container spacing={2}>
             {/* Projects */}
