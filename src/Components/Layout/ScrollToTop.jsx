@@ -1,6 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { Fab } from '@mui/material';
-import KeyboardArrowUpIcon from '@mui/icons-material/KeyboardArrowUp';
+import { AiOutlineRocket } from "react-icons/ai";
+
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
@@ -37,7 +38,7 @@ const ScrollToTop = () => {
   };
 
   const scrollToTop = () => {
-    customSmoothScroll(0, 1000); // Adjust the duration (1000ms = 1 second) as needed
+    customSmoothScroll(0, 1000); // Adjust the speed
   };
 
   useEffect(() => {
@@ -59,7 +60,7 @@ const ScrollToTop = () => {
         display: visible ? 'inline' : 'none',
       }}
     >
-      <KeyboardArrowUpIcon />
+      <AiOutlineRocket fontSize={30} />
     </Fab>
   );
 };

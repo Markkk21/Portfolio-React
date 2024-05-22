@@ -22,7 +22,7 @@ const AboutMe = () => {
             paddingTop="30px"
             paddingBottom="50px"
           >
-            <Typography variant="h3" gutterBottom>
+            <Typography variant="h3" whiteSpace="nowrap" gutterBottom>
             Get to Know <strong id='lblYellow'>Me</strong>
             </Typography>
 
@@ -40,7 +40,7 @@ const AboutMe = () => {
           >
             <Grid>
               <Card id='photoBox'>
-                <img src={MyPhoto} alt="about" style={{ maxWidth: "100%", height: "auto" }} />
+                <img src={MyPhoto} alt="about" style={{ maxWidth: "100%", height: "auto", }} />
               </Card>
             </Grid>
           </Grid>
