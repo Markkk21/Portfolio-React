@@ -14,6 +14,7 @@ import ResumePage from './Components/Pages/Resume/Resume';
 import QueueVistaDetails from './Components/Pages/Project/QueueVista/QueueVistaDetails';
 import Footer from './Components/Layout/Footer';
 import Preloader from './Components/Layout/Pre';
+import ScrollToTop from './Components/Layout/ScrollToTop';
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -48,6 +49,8 @@ function App() {
 
           {/* Footer */}
           <Footer/>
+          {/* Scroll to Top Button */}
+          <ScrollToTop />
         </div>
     </Router>
   );

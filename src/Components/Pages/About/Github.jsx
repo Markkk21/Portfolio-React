@@ -9,7 +9,7 @@ function Github() {
     <Grid container justifyContent="center" sx={{ paddingBottom: "5%" }}>
       <Typography
         variant="h3"
-        sx={{ paddingBottom: "20px" }}
+        sx={{ paddingBottom: "20px", textAlign: {xs:"center"} }}
       >
         My Github <strong id="lblYellow">Calendar</strong>
       </Typography>
