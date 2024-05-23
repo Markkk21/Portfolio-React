@@ -22,7 +22,7 @@ function QueueVista() {
               QueueVista - Digital Waiting Aide
             </Typography>
             <Typography variant="body2">
-              This capstone project consists of 4 members, it is a web-based queue management system that can be also used in mobile web browser.
+            QueueVista is a capstone project consisting of 4 members, built with Laravel, Bootstrap, and MySQL. It is a web-based queue management system that can also be used in a mobile web browser.
             </Typography>
 
             {/* Logo Area */}

@@ -22,7 +22,7 @@ function Aims() {
               AIMS - Asset Inventory Management System
             </Typography>
             <Typography variant="body2">
-            AIMS is a project of Golden Aurum System Solution Inc. During my internship, I was assigned to improve the system's responsiveness, design the login page, and enhance the error pages.
+            AIMS is a project of Golden Aurum System Solution Inc. During my internship, I was tasked with improving the system's responsiveness, designing the login page, and enhancing the error pages using React.js and Material UI.
             </Typography>
 
             {/* Logo Area */}

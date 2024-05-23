@@ -22,7 +22,7 @@ function AssetPRO() {
               AssetPRO
             </Typography>
             <Typography variant="body2">
-            AssetPRO is a project of Golden Aurum System Solution Inc. During my internship, I was assigned to make the Ingress/Egress page responsive for mobile devices.
+            AssetPRO is a project of Golden Aurum System Solution Inc. During my internship, I was tasked with making the Ingress/Egress page responsive for mobile devices using React.js
             </Typography>
 
             {/* Logo Area */}

@@ -7,7 +7,7 @@ import AssetPRO from './AssetPRO/AssetPRO';
 
 function ProjectList() {
   return (
-    <div id="containerProject">
+    <div id="containerProject" sx={{marginTop: {lg:"20%"}}}>
       <Container item xs={12}>
         <Typography variant='h3' textAlign='center' mb={2}>
           My Recent <strong id='lblYellow'>Projects</strong>

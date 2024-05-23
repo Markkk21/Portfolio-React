@@ -191,6 +191,7 @@
     align-items: center;
     min-height: 100vh;
     justify-content: center;
+    padding-top: 3%;
 }
 
 #cardProject {
