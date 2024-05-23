@@ -58,6 +58,9 @@ const ScrollToTop = () => {
         bottom: '5%',
         right: '2rem',
         display: visible ? 'inline' : 'none',
+        backgroundColor: "#727272a2",
+        color: "white",
+        border:" 1.7px solid white"
       }}
     >
       <AiOutlineRocket fontSize={30} />
