@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Grid, Button, Box } from "@mui/material";
+import { Container, Grid, Box, Switch, Button, colors } from "@mui/material";
 import { AiOutlineDownload } from "react-icons/ai";
 import { TbEyeClosed, TbEye } from "react-icons/tb";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -29,11 +29,12 @@ function ResumeNew() {
 
   const togglePdfVisibility = () => {
     setPdfVisible(!pdfVisible);
+
   };
 
   return (
     <Container fluid id="resumeContainer">
-      <Grid container spacing={2} justifyContent="center">
+      <Grid container spacing={2} justifyContent="space-between">
         <Grid item>
           <Button
             id="btnResume"
@@ -44,34 +45,34 @@ function ResumeNew() {
             Download Résumé
           </Button>
         </Grid>
-        <Grid item xs={12}>
-          <Box
-            display="flex"
-            justifyContent="center"
-            id="resumeView"
-            style={{ height: pdfVisible ? "auto" : "0", overflow: "hidden" }}
-          >
-            {pdfVisible && (
-              <Document file={pdf}>
-                <Page
-                  pageNumber={1}
-                  renderTextLayer={false}
-                  scale={width > 786 ? 1.7 : 0.6}
-                />
-              </Document>
-            )}
-          </Box>
-        </Grid>
         <Grid item>
-          <Button
-            id="btnTogglePdf"
-            variant="contained"
-            onClick={togglePdfVisibility}
-            startIcon={pdfVisible ? <TbEyeClosed /> : <TbEye />}
-          >
-            {pdfVisible ? "Hide" : "Show"}
-          </Button>
+          <Switch
+            className="switchResume"
+            checked={pdfVisible}
+            onChange={togglePdfVisibility}
+            icon={<TbEye />}
+            checkedIcon={<TbEyeClosed />}
+            color="default"
+          />
         </Grid>
+      </Grid>
+      <Grid item xs={12}>
+        <Box
+          display="flex"
+          justifyContent="center"
+          id="resumeView"
+          style={{ height: pdfVisible ? "auto" : "0", overflow: "hidden" }}
+        >
+          {pdfVisible && (
+            <Document file={pdf}>
+              <Page
+                pageNumber={1}
+                renderTextLayer={false}
+                scale={width > 786 ? 1.7 : 0.6}
+              />
+            </Document>
+          )}
+        </Box>
       </Grid>
     </Container>
   );

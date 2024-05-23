@@ -324,10 +324,9 @@
     font-weight: 600;
 }
 
-#btnTogglePdf {
-    background-color: transparent;
+.switchResume {
     box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637);
     border: 1.7px solid rgba(212, 175, 55, 0.637);
-    font-family: 'Raleway';
-    font-weight: 600;
+    border-radius: 4px;
+    font-size: 120%;
 }
