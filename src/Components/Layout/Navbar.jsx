@@ -103,7 +103,7 @@ function Navbar(props) {
           sx={{
             display: { xs: 'block', sm: 'none' },
             '& .MuiDrawer-paper': { boxSizing: 'border-box', width: drawerWidth, backgroundColor: 'rgba(0, 0, 0, 0.5)', color: 'white', backdropFilter: 'blur(15px)' },    
-            '& .MuiTypography-root': { fontSize: '2vh', ml: 2, fontFamily: 'Raleway'},
+            '& .MuiTypography-root': { fontSize: '100%', ml: 2, fontFamily: 'Raleway'},
           }}
         >
           {drawerContent}
