@@ -50,7 +50,6 @@ const ScrollToTop = () => {
 
   return (
     <Fab
-      color="light"
       size="medium"
       onClick={scrollToTop}
       style={{
@@ -63,7 +62,7 @@ const ScrollToTop = () => {
         border:" 1.7px solid white"
       }}
     >
-      <AiOutlineRocket fontSize={30} />
+      <AiOutlineRocket fontSize={30}/>
     </Fab>
   );
 };

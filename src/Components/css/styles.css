@@ -176,7 +176,11 @@
 
 @media (orientation: portrait) {
     #containerProject {
-        margin-top: 20%;
+        margin-top: 15%;
+    }
+
+    #containerDetails {
+        margin-top: 17%;
     }
 
     #projectBox {
@@ -192,6 +196,12 @@
     min-height: 100vh;
     justify-content: center;
     padding-top: 3%;
+}
+
+#containerDetails {
+    display: flex;
+    min-height: inherit;
+    justify-content: center;
 }
 
 #cardProject {
