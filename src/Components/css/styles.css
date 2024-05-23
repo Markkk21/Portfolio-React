@@ -51,11 +51,13 @@
     text-align: center;
     pointer-events: none;
     font-family: 'Raleway';
+    font-weight: 600;
 }
 
 #lblMark {
     pointer-events: none;
-    /* font-family: 'Raleway'; */
+    font-family: 'Raleway';
+    font-weight: 500;
 }
 
 #containerDashboard {
@@ -126,7 +128,8 @@
 }
 
 #photoBox {
-    box-shadow: 0 4px 5px 3px #725d1f;
+    box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637);
+    border: 1.7px solid rgba(212, 175, 55, 0.637);
     background-color: transparent;
 }
 
@@ -241,6 +244,7 @@
     margin-top: 10px;
 }
   
+
 /* ------- */
 /* ScrollBar */
 /* ------- */
@@ -307,18 +311,22 @@
     padding-bottom: 2%;
     padding-top: 2%;
     justify-content: center;
-    box-shadow: 0 4px 5px 3px #725d1f;
+    box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637);
+    border: 1.7px solid rgba(212, 175, 55, 0.637);
 }
 
 #btnResume {
-    background-color: #d1ac00;
+    background-color: transparent;
+    box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637);
+    border: 1.7px solid rgba(212, 175, 55, 0.637);
     font-family: 'Raleway';
     font-weight: 600;
 }
 
 #btnTogglePdf {
-    background-color: #d1ac00;
+    background-color: transparent;
+    box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637);
+    border: 1.7px solid rgba(212, 175, 55, 0.637);
     font-family: 'Raleway';
     font-weight: 600;
 }
-  
