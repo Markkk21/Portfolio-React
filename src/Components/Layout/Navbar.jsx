@@ -14,7 +14,7 @@ const navItems = [
   { name: 'Home', path: '/', icon: <HomeOutlinedIcon /> },
   { name: 'About', path: '/about-me', icon: <PersonOutlineOutlinedIcon /> },
   { name: 'Projects', path: '/projects', icon: <IntegrationInstructionsOutlinedIcon /> },
-  { name: 'Resume', path: '/resume', icon: <FeedOutlinedIcon /> },
+  { name: 'Résumé', path: '/resume', icon: <FeedOutlinedIcon /> },
 ];
 
 function Navbar(props) {

@@ -1,4 +1,4 @@
-import React, {useEffect} from 'react';
+import React from 'react';
 import { Typography, Grid, Container, Card } from '@mui/material';
 
 import MyPhoto from '../../../img/MyPhoto.png';

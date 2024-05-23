@@ -1,29 +1,80 @@
-import React from 'react';
+import React, { useState, useEffect } from "react";
+import { Container, Grid, Button, Box } from "@mui/material";
+import { AiOutlineDownload } from "react-icons/ai";
+import { TbEyeClosed, TbEye } from "react-icons/tb";
+import { Document, Page, pdfjs } from "react-pdf";
+import "react-pdf/dist/esm/Page/AnnotationLayer.css";
+import pdf from "../ResumeDownload/Mark_Joshua_Garcia_Resume.pdf"; // File Directory
 
-import { IconButton, Typography } from '@mui/material';
+pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
-import CloudDownloadIcon from '@mui/icons-material/CloudDownload';
+function ResumeNew() {
+  const [width, setWidth] = useState(1200);
+  const [pdfVisible, setPdfVisible] = useState(false); // Initially set to false
 
-const ResumeFile = () => {
-  const pdfUrl = 'https://drive.google.com/uc?id=1q537qVdlk4gR01YWRY2BiIVancfL8Fs4&export=download'; // Replace with your Google Drive PDF link
+  useEffect(() => {
+    const handleResize = () => setWidth(window.innerWidth);
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
 
   const handleDownload = () => {
-    const link = document.createElement('a');
-    link.href = pdfUrl;
-    link.setAttribute('download', 'MarkJoshuaGarcia_Resume.pdf'); // Change to your preferred file name
+    const link = document.createElement("a");
+    link.href = pdf;
+    link.setAttribute("download", "Garcia_MarkJoshua_Resume.pdf"); // Filename
     document.body.appendChild(link);
     link.click();
     document.body.removeChild(link);
   };
 
-  return (
-    <div>
-      <IconButton onClick={handleDownload} sx={{ color: "white", margin: ".5vh" }}>
-        <CloudDownloadIcon fontSize="large" />
-        <Typography variant="subtitle2" sx={{ color: "white", ml: ".5vh" }}>Download Résumé</Typography>
-      </IconButton>
-    </div>
-  );
-};
+  const togglePdfVisibility = () => {
+    setPdfVisible(!pdfVisible);
+  };
 
-export default ResumeFile;
+  return (
+    <Container fluid id="resumeContainer">
+      <Grid container spacing={2} justifyContent="center">
+        <Grid item>
+          <Button
+            id="btnResume"
+            variant="contained"
+            onClick={handleDownload}
+            startIcon={<AiOutlineDownload />}
+          >
+            Download Résumé
+          </Button>
+        </Grid>
+        <Grid item xs={12}>
+          <Box
+            display="flex"
+            justifyContent="center"
+            id="resumeView"
+            style={{ height: pdfVisible ? "auto" : "0", overflow: "hidden" }}
+          >
+            {pdfVisible && (
+              <Document file={pdf}>
+                <Page
+                  pageNumber={1}
+                  renderTextLayer={false}
+                  scale={width > 786 ? 1.7 : 0.6}
+                />
+              </Document>
+            )}
+          </Box>
+        </Grid>
+        <Grid item>
+          <Button
+            id="btnTogglePdf"
+            variant="contained"
+            onClick={togglePdfVisibility}
+            startIcon={pdfVisible ? <TbEyeClosed /> : <TbEye />}
+          >
+            {pdfVisible ? "Hide" : "Show"}
+          </Button>
+        </Grid>
+      </Grid>
+    </Container>
+  );
+}
+
+export default ResumeNew;
