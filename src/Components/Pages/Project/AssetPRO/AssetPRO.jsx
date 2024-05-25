@@ -10,7 +10,8 @@ function AssetPRO() {
   return (
     <Grid>
       {/* Projects */}
-      <Card component={Link} to="/assetpro-details" style={{ textDecoration: 'none', color: 'inherit'}}>
+      {/* <Card component={Link} to="/assetpro-details" style={{ textDecoration: 'none', color: 'inherit'}}> */}
+      <Card component={Link} style={{ textDecoration: 'none', color: 'inherit'}}>
         <CardActionArea>
           <CardMedia
             component="img"
