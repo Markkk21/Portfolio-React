@@ -55,8 +55,8 @@ const ScrollToTop = () => {
         position: 'fixed',
         bottom: '5%',
         right: '2rem',
-        opacity: visible ? 1 : 0, // Adjust opacity based on visibility
-        transition: 'opacity 0.5s ease' // Add transition property
+        opacity: visible ? 1 : 0,
+        transition: 'opacity 0.5s ease' 
       }}
     >
       <AiOutlineRocket fontSize={30}/>
