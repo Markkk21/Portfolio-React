@@ -2,7 +2,6 @@ import React, { useState, useEffect } from 'react';
 import { Fab } from '@mui/material';
 import { AiOutlineRocket } from "react-icons/ai";
 
-
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
 
@@ -56,10 +55,8 @@ const ScrollToTop = () => {
         position: 'fixed',
         bottom: '5%',
         right: '2rem',
-        display: visible ? 'inline' : 'none',
-        backgroundColor: "#727272a2",
-        color: "white",
-        border:" 1.7px solid white"
+        opacity: visible ? 1 : 0, // Adjust opacity based on visibility
+        transition: 'opacity 0.5s ease' // Add transition property
       }}
     >
       <AiOutlineRocket fontSize={30}/>
