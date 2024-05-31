@@ -142,7 +142,7 @@
     font-size: 4.5em !important;
     margin: 15px !important;
     padding: 10px !important;
-    opacity: 0.93 !important;
+    opacity: 0.5 !important; /* Initial opacity */
     border: 1.7px solid rgba(212, 175, 55, 0.637) !important;
     vertical-align: middle !important;
     text-align: center !important;
@@ -150,9 +150,15 @@
     display: table !important;
     box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637) !important;
     overflow: hidden !important;
+    transform: translateY(20px); /* Initial position */
     transition: all 0.4s ease 0s !important;
   }
   
+  /* Visible state */
+  .tech-icons.visible {
+    opacity: 0.93 !important;
+    transform: translateY(0); /* Move to final position */
+  }
   @media (max-width: 767px) {
     .tech-icons {
       margin: 10px !important;
@@ -261,6 +267,10 @@
   width: 6px;
 }
 
+::-webkit-scrollbar:horizontal {
+  height: 6px;
+}
+
 /* Track */
 ::-webkit-scrollbar-track {
   background: #111111;
@@ -355,7 +365,7 @@
     }
   }
   
-  .wiggle {
+.wiggle {
     animation: wiggle 0.5s ease;
-  }
+}
   
