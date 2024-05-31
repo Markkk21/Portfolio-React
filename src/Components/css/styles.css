@@ -268,7 +268,8 @@
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #727272;
+  /* background: #727272; */
+  background: #d1ac00;
   border-radius: 12px;
 }
 
@@ -337,3 +338,24 @@
     border-radius: 4px;
     font-size: 120%;
 }
+
+/* ------- */
+/* ScrollToTop */
+/* ------- */
+
+@keyframes wiggle {
+    0%, 100% {
+      transform: rotate(0deg);
+    }
+    25% {
+      transform: rotate(10deg);
+    }
+    75% {
+      transform: rotate(-10deg);
+    }
+  }
+  
+  .wiggle {
+    animation: wiggle 0.5s ease;
+  }
+  

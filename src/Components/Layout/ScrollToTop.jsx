@@ -1,9 +1,12 @@
 import React, { useState, useEffect } from 'react';
 import { Fab } from '@mui/material';
 import { AiOutlineRocket } from "react-icons/ai";
+import { useLocation } from 'react-router-dom';
 
 const ScrollToTop = () => {
   const [visible, setVisible] = useState(false);
+  const [wiggle, setWiggle] = useState(false);
+  const { pathname } = useLocation();
 
   const toggleVisibility = () => {
     if (window.pageYOffset > 300) {
@@ -38,6 +41,8 @@ const ScrollToTop = () => {
 
   const scrollToTop = () => {
     customSmoothScroll(0, 1000); // Adjust the speed
+    setWiggle(true);
+    setTimeout(() => setWiggle(false), 500); // Remove the class after the animation
   };
 
   useEffect(() => {
@@ -46,6 +51,11 @@ const ScrollToTop = () => {
       window.removeEventListener('scroll', toggleVisibility);
     };
   }, []);
+
+  // Scroll to top on route change
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
 
   return (
     <Fab
@@ -56,10 +66,10 @@ const ScrollToTop = () => {
         bottom: '5%',
         right: '2rem',
         opacity: visible ? 1 : 0,
-        transition: 'opacity 0.5s ease' 
+        transition: 'opacity 0.5s ease'
       }}
     >
-      <AiOutlineRocket fontSize={30}/>
+      <AiOutlineRocket fontSize={30} className={wiggle ? 'wiggle' : ''} />
     </Fab>
   );
 };
