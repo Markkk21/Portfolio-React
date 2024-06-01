@@ -11,7 +11,7 @@ import { Timeline,
 import QrCodeScannerIcon from '@mui/icons-material/QrCodeScanner';
 import LoginIcon from '@mui/icons-material/Login';
 import FormatListNumberedIcon from '@mui/icons-material/FormatListNumbered';
-import RepeatIcon from '@mui/icons-material/Repeat';
+import AddReactionOutlinedIcon from '@mui/icons-material/AddReactionOutlined';
 import Typography from '@mui/material/Typography';
 
 export default function CustomizedTimeline() {
@@ -29,7 +29,7 @@ export default function CustomizedTimeline() {
             QR Code
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineConnector />
+          <TimelineConnector sx={{ bgcolor: '#d1ac00' }} />
           <TimelineDot sx={{ bgcolor: 'transparent', border: "2px solid rgba(212, 175, 55, 0.637)" }}>
             <QrCodeScannerIcon/>
           </TimelineDot>
@@ -39,7 +39,7 @@ export default function CustomizedTimeline() {
           <Typography variant="h6" component="span">
                 <strong id="lblYellow">1st</strong>
           </Typography>
-          <Typography>Scan the QR code using your mobile phone to access the website.</Typography>
+          <Typography>Scan the QR code using mobile phone to access the website.</Typography>
         </TimelineContent>
       </TimelineItem>
 
@@ -79,13 +79,13 @@ export default function CustomizedTimeline() {
           <TimelineDot sx={{ bgcolor: 'transparent', border: "2px solid rgba(212, 175, 55, 0.637)" }}>
             <FormatListNumberedIcon />
           </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
+          <TimelineConnector sx={{ bgcolor: 'green' }} />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-        <Typography variant="h6" component="span">
+            <Typography variant="h6" component="span">
                 <strong id="lblYellow">3rd</strong>
-          </Typography>
-          <Typography>Select one or more offices and get a queue number. The system will display your number and alert you when it's your turn.</Typography>
+            </Typography>
+          <Typography>Select one or more offices and get a queue number. The system will display the number and alert user when it's their turn.</Typography>
         </TimelineContent>
       </TimelineItem>
       
@@ -95,20 +95,20 @@ export default function CustomizedTimeline() {
           variant="body2"
           id="lblYellow"
         >
-          10:00 am
+          Feedback
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: 'secondary.main' }} />
-          <TimelineDot color="secondary">
-            <RepeatIcon />
+          <TimelineConnector sx={{ bgcolor: 'green' }} />
+          <TimelineDot sx={{ bgcolor: 'transparent', border: "2px solid green"}}>
+            <AddReactionOutlinedIcon />
           </TimelineDot>
-          <TimelineConnector />
+          <TimelineConnector sx={{ bgcolor: 'green' }} />
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
-          <Typography variant="h6" component="span">
-            Repeat
-          </Typography>
-          <Typography>Because this is the life you love!</Typography>
+            <Typography variant="h6" component="span">
+                <strong id="lblYellow">Last</strong>
+            </Typography>
+          <Typography>Once the transaction is complete, the user can rate their experience using the system!</Typography>
         </TimelineContent>
       </TimelineItem>
     </Timeline>
