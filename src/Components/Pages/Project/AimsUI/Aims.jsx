@@ -2,9 +2,6 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Typography, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
 import MyPhoto from '../../../../img/AIMS/AIMS.png';
-import ReactJS from '../../../../img/Logo/ReactJS.png';
-import MUI from '../../../../img/Logo/MUI.png';
-// import Bootstrap from '../../../img/Logo/Bootstrap.png';
 
 function Aims() {
   return (
@@ -25,19 +22,6 @@ function Aims() {
             <Typography variant="body2">
             AIMS is a project of Golden Aurum System Solution Inc. During my internship, I was tasked with improving the system's responsiveness, designing the login page, and enhancing the error pages using React.js and Material UI.
             </Typography>
-
-            {/* Logo Area */}
-            <Grid container spacing={2} justifyContent="flex-end" sx={{mt:.2 }} >
-              <Grid item xs={2} md={2}>
-                {/* <CardMedia component="img" src={ReactJS} alt="ReactJS"/> */}
-              </Grid>
-              <Grid item xs={2} md={2}>
-                <CardMedia component="img" src={ReactJS} alt="ReactJS"/>
-              </Grid>
-              <Grid item xs={2} md={2}>
-                <CardMedia component="img" src={MUI} alt="MUI"/>
-              </Grid>
-            </Grid>
 
           </CardContent>
         </CardActionArea>

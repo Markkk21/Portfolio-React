@@ -3,6 +3,7 @@ import { Grid, Card, Typography, Container, Breadcrumbs, Link as MuiLink } from 
 import { Link } from 'react-router-dom';
 import Tline from './TimelineDetails';
 import Introduction from './Intro';
+import DevTools from './DevTools';
 // import QueueVistaPhoto from './PhotoSlider';
 
 function QueueVistaDetails() {
@@ -59,7 +60,7 @@ function QueueVistaDetails() {
             flexDirection="column"
             alignItems="center"
           >
-          <Typography variant='h3' textAlign='center' mb={2}>
+          <Typography variant='h2' textAlign='center' mb={2}>
             Queue<strong id='lblYellow'>Vista</strong>
           </Typography>
           
@@ -68,36 +69,41 @@ function QueueVistaDetails() {
 
         <Grid container justifyContent="center" spacing={3} >
           
-          
-        <Grid
-              item
-              md={5}
-              display="flex"
-              flexDirection="column"
-            >
-            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "2%"}}>
+          <Grid
+            item
+            md={6}
+            display="flex"
+            flexDirection="column"
+          >
+            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "2%", textAlign: {xs: "center"}}}>
               Project <strong id='lblYellow'>Purpose</strong>
             </Typography>
-              <Introduction/>
+            <Introduction/>
+
+            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "4%", textAlign: {xs: "center"}}}>
+            <strong id='lblYellow'>Dev </strong>Tools
+            </Typography>
+            <DevTools/>
+
           </Grid>
 
-            <Grid
-              item
-              md={7}
-              display="flex"
-              flexDirection="column"
-            >
-              <Tline/>
-            </Grid>
+          <Grid
+            item
+            md={5}
+            display="flex"
+            flexDirection="column"
+          >
+            <Tline/>
+          </Grid>
         </Grid>
 
-        <Typography variant='h3' textAlign='center' mb={2} mt={1}>
-          Technical <strong id='lblYellow'>Skills </strong>
-        </Typography>
+          <Typography variant='h3' textAlign='center' mb={2} mt={1}>
+            Technical <strong id='lblYellow'>Skills </strong>
+          </Typography>
 
-        <Typography variant='h3' textAlign='center' mb={2}>
-        <strong id='lblYellow'>Tools </strong>I use
-        </Typography>
+          <Typography variant='h3' textAlign='center' mb={2}>
+          <strong id='lblYellow'>Tools </strong>I use
+          </Typography>
 
       </Container>
     </Container>

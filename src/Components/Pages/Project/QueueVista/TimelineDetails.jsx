@@ -79,7 +79,7 @@ export default function CustomizedTimeline() {
           <TimelineDot sx={{ bgcolor: 'transparent', border: "2px solid rgba(212, 175, 55, 0.637)" }}>
             <FormatListNumberedIcon />
           </TimelineDot>
-          <TimelineConnector sx={{ bgcolor: 'green' }} />
+          <TimelineConnector/>
         </TimelineSeparator>
         <TimelineContent sx={{ py: '12px', px: 2 }}>
             <Typography variant="h6" component="span">
@@ -98,7 +98,7 @@ export default function CustomizedTimeline() {
           Feedback
         </TimelineOppositeContent>
         <TimelineSeparator>
-          <TimelineConnector sx={{ bgcolor: 'green' }} />
+          <TimelineConnector/>
           <TimelineDot sx={{ bgcolor: 'transparent', border: "2px solid green"}}>
             <AddReactionOutlinedIcon />
           </TimelineDot>
@@ -111,6 +111,8 @@ export default function CustomizedTimeline() {
           <Typography>Once the transaction is complete, the user can rate their experience using the system!</Typography>
         </TimelineContent>
       </TimelineItem>
+      
+      
     </Timeline>
   );
 }
