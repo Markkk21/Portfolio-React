@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import Tline from './TimelineDetails';
 import Introduction from './Intro';
 import DevTools from './DevTools';
+import UI from './UI';
 // import QueueVistaPhoto from './PhotoSlider';
 
 function QueueVistaDetails() {
@@ -98,8 +99,10 @@ function QueueVistaDetails() {
         </Grid>
 
           <Typography variant='h3' textAlign='center' mb={2} mt={1}>
-            Technical <strong id='lblYellow'>Skills </strong>
+            User <strong id='lblYellow'>Interface</strong>
           </Typography>
+
+          <UI/>
 
           <Typography variant='h3' textAlign='center' mb={2}>
           <strong id='lblYellow'>Tools </strong>I use

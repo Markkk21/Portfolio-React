@@ -37,12 +37,12 @@ function ProjectList() {
               </Card>
             </Grid>
         
-            {/* Projects */}
-            <Grid item xs={12} md={4}>
+            {/* Follow this when Adding */}
+            {/* <Grid item xs={12} md={4}>
               <Card id='projectBox'>
                 <AssetPRO/>
               </Card>
-            </Grid>
+            </Grid> */}
             
         </Grid>
         
