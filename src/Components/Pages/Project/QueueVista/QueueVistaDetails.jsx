@@ -104,9 +104,6 @@ function QueueVistaDetails() {
 
           <UI/>
 
-          <Typography variant='h3' textAlign='center' mb={2}>
-          <strong id='lblYellow'>Tools </strong>I use
-          </Typography>
 
       </Container>
     </Container>
