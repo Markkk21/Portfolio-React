@@ -53,7 +53,7 @@ function QueueVistaPhoto() {
   };
 
   return (
-    <Box sx={{ maxWidth: 400, flexGrow: 1, border: "1.7px solid rgba(212, 175, 55, 0.637)", boxShadow: "4px 5px 4px 3px rgba(83, 70, 22, 0.637)" }}>
+    <Box sx={{ maxWidth: 450, flexGrow: 1, border: "1.7px solid rgba(212, 175, 55, 0.637)", boxShadow: "4px 5px 4px 3px rgba(83, 70, 22, 0.637)" }}>
 
       <Typography>{images[activeStep].label}</Typography>
       <AutoPlaySwipeableViews
@@ -68,9 +68,9 @@ function QueueVistaPhoto() {
               <Box
                 component="img"
                 sx={{
-                  height: 255,
+                  height: 270,
                   display: 'block',
-                  maxWidth: 400,
+                  maxWidth: 450,
                   overflow: 'hidden',
                   width: '100%',
                 }}

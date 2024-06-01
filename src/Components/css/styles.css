@@ -131,6 +131,7 @@
     box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637);
     border: 1.7px solid rgba(212, 175, 55, 0.637);
     background-color: transparent;
+    pointer-events: none;
 }
 
 
@@ -159,6 +160,7 @@
     opacity: 0.93 !important;
     transform: translateY(0); /* Move to final position */
   }
+
   @media (max-width: 767px) {
     .tech-icons {
       margin: 10px !important;
@@ -174,6 +176,18 @@
     padding: 20px !important;
     line-height: 1.6 !important;
   }
+
+  .github-calendar {
+    opacity: 0.5;
+    transform: translateY(20px);
+    transition: all 0.4s ease 0s;
+  }
+  
+  .github-calendar.visible {
+    opacity: 0.93;
+    transform: translateY(0);
+  }
+  
 
 
 /* ------- */
@@ -202,9 +216,13 @@
 }
 
 #containerDetails {
-    display: flex;
+    /* display: flex;
+    position: relative;
     min-height: inherit;
-    justify-content: center;
+    justify-content: center; */
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 30px;
 }
 
 #cardProject {
@@ -242,10 +260,16 @@
     text-align: center;
 }
 
+#sliderBox {
+    /* box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637); */
+    border: 1.7px solid rgba(212, 175, 55, 0.637);
+    background-color: transparent;
+}
 
 
+/* ----- */
 /* Footer */
-
+/* ----- */
 .footer {
     background-color: rgba(17, 17, 17, 0.61);
     color: #fff;
@@ -264,7 +288,7 @@
 /* ------- */
 
 ::-webkit-scrollbar {
-  width: 6px;
+  width: 5px;
 }
 
 ::-webkit-scrollbar:horizontal {

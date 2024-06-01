@@ -1,13 +1,17 @@
 import React from 'react';
 import { Grid, Card, Typography, Container, Breadcrumbs, Link as MuiLink } from '@mui/material';
 import { Link } from 'react-router-dom';
-import QueueVistaPhoto from './PhotoSlider';
+import Tline from './TimelineDetails';
+// import QueueVistaPhoto from './PhotoSlider';
 
 function QueueVistaDetails() {
   return (
-    <div id="containerDetails">
-      <Container item xs={12}>
-        <Breadcrumbs separator="›" aria-label="breadcrumb" sx={{ marginBottom: 4, color: "white", fontFamily: "Raleway" }}>
+
+    <Container maxWidth={false} disableGutters id="containerDetails">
+      <Container>
+
+        {/* BreadCrumbs */}
+        <Breadcrumbs separator="›" aria-label="breadcrumb" sx={{marginBottom:2, color: "white", fontFamily: "Raleway" }}>
           <MuiLink
             component={Link}
             to="/"
@@ -46,31 +50,62 @@ function QueueVistaDetails() {
           </MuiLink>
           <Typography sx={{ color: '#d4af37' }}>QueueVista</Typography>
         </Breadcrumbs>
-        <Typography variant='h3' textAlign='center' mb={4}>
-          Queue<strong id='lblYellow'>Vista</strong>
-        </Typography>
-        <Grid container spacing={2}>
-          {/* Projects */}
-          <Grid item xs={12} md={4}>
-              <QueueVistaPhoto />
-          </Grid>
 
-          {/* Projects */}
-          <Grid item xs={12} md={4}>
-            <Card id='projectBox'>
-              <Typography textAlign='center'>Insert</Typography>
-            </Card>
-          </Grid>
+        {/* Details */}
+        <Grid
+            item
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+          >
+          <Typography variant='h3' textAlign='center' mb={2}>
+            Queue<strong id='lblYellow'>Vista</strong>
+          </Typography>
+          
+        </Grid>
 
-          {/* Projects */}
-          <Grid item xs={12} md={4}>
-            <Card id='projectBox'>
-              {/* <AssetPRO/> */}
-            </Card>
+
+        <Grid container justifyContent="center" spacing={3} padding="10px">
+          
+            <Grid
+              item
+              md={7}
+              display="flex"
+              flexDirection="column"
+              alignItems="center"
+              paddingTop="30px"
+              paddingBottom="50px"
+            >
+            <Tline/>
+            </Grid>
+
+            <Grid
+              item
+              md={5}
+              display="flex"
+              justifyContent="center"
+              alignItems="center"
+              paddingTop="120px"
+              paddingBottom="50px"
+            >
+            <Grid>
+              <Card id='sliderBox'>
+                {/* <QueueVistaPhoto /> */}
+              </Card>
+            </Grid>
           </Grid>
         </Grid>
+
+        <Typography variant='h3' textAlign='center' mb={2} mt={1}>
+          Technical <strong id='lblYellow'>Skills </strong>
+        </Typography>
+
+        <Typography variant='h3' textAlign='center' mb={2}>
+        <strong id='lblYellow'>Tools </strong>I use
+        </Typography>
+
       </Container>
-    </div>
+    </Container>
   );
 }
 

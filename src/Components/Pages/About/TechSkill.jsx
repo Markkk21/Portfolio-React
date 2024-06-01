@@ -15,7 +15,7 @@ import {
   SiMui,
 } from "react-icons/si";
 import { TbBrandReactNative  } from "react-icons/tb";
-import useIntersectionObserver from '../../Layout/Intersection';
+import useIntersectionObserver from '../../Layout/Transition';
 
 function TechSkill() {
   const observerRef = useIntersectionObserver('visible');
