@@ -155,7 +155,6 @@
     transition: all 0.4s ease 0s !important;
   }
   
-  /* Visible state */
   .tech-icons.visible {
     opacity: 0.93 !important;
     transform: translateY(0); /* Move to final position */
@@ -188,7 +187,6 @@
     transform: translateY(0);
   }
   
-
 
 /* ------- */
 /* Projects */
@@ -264,6 +262,17 @@
     /* box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637); */
     border: 1.7px solid rgba(212, 175, 55, 0.637);
     background-color: transparent;
+}
+
+.queuevista-timeline {
+    opacity: 0.5;
+    transform: translateY(20px);
+    transition: all 0.4s ease 0s;
+  }
+  
+.queuevista-timeline.visible {
+    opacity: 0.93;
+    transform: translateY(0);
 }
 
 
