@@ -2,6 +2,7 @@ import React from 'react';
 import { Grid, Card, Typography, Container, Breadcrumbs, Link as MuiLink } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Tline from './TimelineDetails';
+import Introduction from './Intro';
 // import QueueVistaPhoto from './PhotoSlider';
 
 function QueueVistaDetails() {
@@ -65,35 +66,29 @@ function QueueVistaDetails() {
         </Grid>
 
 
-        <Grid container justifyContent="center" spacing={3} padding="10px">
+        <Grid container justifyContent="center" spacing={3} >
           
+          
+        <Grid
+              item
+              md={5}
+              display="flex"
+              flexDirection="column"
+            >
+            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "2%"}}>
+              Project <strong id='lblYellow'>Purpose</strong>
+            </Typography>
+              <Introduction/>
+          </Grid>
+
             <Grid
               item
               md={7}
               display="flex"
               flexDirection="column"
-              alignItems="center"
-              paddingTop="30px"
-              paddingBottom="50px"
             >
-            <Tline/>
+              <Tline/>
             </Grid>
-
-            <Grid
-              item
-              md={5}
-              display="flex"
-              justifyContent="center"
-              alignItems="center"
-              paddingTop="120px"
-              paddingBottom="50px"
-            >
-            <Grid>
-              <Card id='sliderBox'>
-                {/* <QueueVistaPhoto /> */}
-              </Card>
-            </Grid>
-          </Grid>
         </Grid>
 
         <Typography variant='h3' textAlign='center' mb={2} mt={1}>

@@ -2,7 +2,7 @@ import React from 'react';
 import { Typography, Grid, Container, Card } from '@mui/material';
 
 import MyPhoto from '../../../img/MyPhoto.png';
-import InformationBox from '../../Layout/InformationBox';
+import InformationBox from './InformationBox';
 
 import Techstack from "./TechSkill";
 import Tools from './Tools';
