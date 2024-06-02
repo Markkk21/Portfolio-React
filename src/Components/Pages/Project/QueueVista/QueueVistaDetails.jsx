@@ -81,7 +81,7 @@ function QueueVistaDetails() {
             </Typography>
             <Introduction/>
 
-            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "4%", textAlign: {xs: "center"}}}>
+            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "12%", textAlign: {xs: "center"}}}>
             <strong id='lblYellow'>Dev </strong>Tools
             </Typography>
             <DevTools/>
@@ -98,7 +98,7 @@ function QueueVistaDetails() {
           </Grid>
         </Grid>
 
-          <Typography variant='h3' textAlign='center' mb={2} mt={1}>
+          <Typography variant='h3' textAlign='center' mb={2} mt={5}>
             User <strong id='lblYellow'>Interface</strong>
           </Typography>
 
