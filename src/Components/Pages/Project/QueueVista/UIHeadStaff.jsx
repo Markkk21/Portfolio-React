@@ -64,7 +64,7 @@ const images = [
   },
 ];
 
-function QueueVistaPhoto() {
+function UIHeadStaff() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -82,7 +82,7 @@ function QueueVistaPhoto() {
   };
 
   return (
-    <Box sx={{ maxWidth: 450, flexGrow: 1, border: "1.7px solid rgba(212, 175, 55, 0.637)", boxShadow: "4px 5px 4px 3px rgba(83, 70, 22, 0.637)" }}>
+    <Box sx={{ maxWidth: 500, flexGrow: 1, border: "1.7px solid rgba(212, 175, 55, 0.637)", boxShadow: "4px 5px 4px 3px rgba(83, 70, 22, 0.637)" }}>
 
       <Typography>{images[activeStep].label}</Typography>
       <AutoPlaySwipeableViews
@@ -97,9 +97,9 @@ function QueueVistaPhoto() {
               <Box
                 component="img"
                 sx={{
-                  height: 400,
+                  height: 300,
                   display: 'block',
-                  maxWidth: 450,
+                  maxWidth: 500,
                   overflow: 'hidden',
                   width: '100%',
                 }}
@@ -157,4 +157,4 @@ function QueueVistaPhoto() {
   );
 }
 
-export default QueueVistaPhoto;
+export default UIHeadStaff;
