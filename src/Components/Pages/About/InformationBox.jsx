@@ -32,8 +32,12 @@ function InfoBox() {
               </ListItem>
 
             </List>
+            
+            <Typography variant="h4" whiteSpace="nowrap" gutterBottom mt={2}>
+            <strong id='lblYellow'>Find</strong> Me On
+            </Typography>
 
-              <Typography variant='h6' id="lblSocials">Feel free to <d id="lblYellow">connect</d> with me</Typography>
+              <Typography variant='h6'>Feel free to <d id="lblYellow">connect</d> with me</Typography>
                 <a id="iconSocials" href="https://www.linkedin.com/in/mark-joshua-garcia/" target="_blank" rel="noopener noreferrer">
                   <LinkedInIcon sx={{ fontSize: "5vh"}}/>
                 </a>
