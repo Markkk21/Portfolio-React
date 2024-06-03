@@ -284,6 +284,21 @@
     transform: translateY(0);
 }
 
+#btnAsset {
+    background-color: transparent;
+    box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637);
+    border: 1.7px solid rgba(212, 175, 55, 0.637);
+    font-family: 'Raleway';
+    color: #fff;
+    margin-bottom: 3%;
+}
+
+#UIAssetPROBox {
+    box-shadow: 4px 5px 4px 3px rgba(83, 70, 22, 0.637);
+    border: 1.7px solid rgba(212, 175, 55, 0.637);
+}
+
+
 
 /* ----- */
 /* Footer */
