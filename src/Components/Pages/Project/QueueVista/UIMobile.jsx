@@ -9,29 +9,49 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 
-import Project from '../../../../img/project.png'
+// Photos
+import Home from '../../../../img/QueueVista/Mobile/HomeMobile.png'
+import Register from '../../../../img/QueueVista/Mobile/RegisterMobile.png'
+import Login from '../../../../img/QueueVista/Mobile/LoginMobile.png'
+import Dashboard from '../../../../img/QueueVista/Mobile/DashboardMobile.png'
+import Number from '../../../../img/QueueVista/Mobile/GetNumberMobile.png'
+import QueueNumber from '../../../../img/QueueVista/Mobile/QueueNumberMobile.png'
+import Feedback from '../../../../img/QueueVista/Mobile/FeedbackMobile.png'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+    label: 'Home – Mobile',
+    imgPath: Home,
+      
   },
   {
-    label: 'Bird',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+    label: 'Register – Mobile',
+    imgPath: Register,
+      
   },
   {
-    label: 'Bali, Indonesia',
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+    label: 'Login – Mobile',
+    imgPath: Login,
+      
   },
   {
-    label: 'Goč, Serbia',
-    imgPath: Project,
+    label: 'Dashboard – Mobile',
+    imgPath: Dashboard,
+      
+  },
+  {
+    label: 'Get Queue Number – Mobile',
+    imgPath: Number,
+  },
+  {
+    label: 'Show Queue Number – Mobile',
+    imgPath: QueueNumber,
+  },
+  {
+    label: 'Feedback – Mobile',
+    imgPath: Feedback,
   },
 ];
 
@@ -68,7 +88,7 @@ function QueueVistaPhoto() {
               <Box
                 component="img"
                 sx={{
-                  height: 270,
+                  height: 400,
                   display: 'block',
                   maxWidth: 450,
                   overflow: 'hidden',
