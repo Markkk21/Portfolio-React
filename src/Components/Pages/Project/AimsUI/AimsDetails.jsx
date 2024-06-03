@@ -58,9 +58,11 @@ function AimsDetails() {
             display="flex"
             flexDirection="column"
             alignItems="center"
+            mb={3}
           >
           <Typography variant='h2' textAlign='center' mb={2}>
-            Asset<strong id='lblYellow'>PRO</strong>
+            <strong id='lblYellow'>AIMS</strong>
+            <Typography variant='h5'>Asset Inventory Management System</Typography>
           </Typography>
           
         </Grid>

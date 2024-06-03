@@ -60,6 +60,7 @@ function AssetPRODetails() {
             display="flex"
             flexDirection="column"
             alignItems="center"
+            mb={3}
           >
           <Typography variant='h2' textAlign='center' mb={2}>
             Asset<strong id='lblYellow'>PRO</strong>

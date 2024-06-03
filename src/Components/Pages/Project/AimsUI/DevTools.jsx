@@ -5,6 +5,7 @@ import {
   SiMui ,
   SiReact ,
   SiVisualstudiocode,
+  SiFigma
 } from "react-icons/si";
 import useIntersectionObserver from '../../../Layout/Transition';
 
@@ -15,6 +16,7 @@ function DevTools() {
     { icon: <SiReact  />, key: "reactjs" },
     { icon: <SiMui />, key: "mui" },
     { icon: <SiVisualstudiocode />, key: "vscode" },
+    { icon: <SiFigma />, key: "figma" },
   ];
 
 
