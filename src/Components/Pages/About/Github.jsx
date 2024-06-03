@@ -1,19 +1,9 @@
 import React, { useEffect } from "react";
 import GitHubCalendar from "react-github-calendar";
 import { Grid, Typography } from "@mui/material";
-import useIntersectionObserver from '../../Layout/Transition';
 
 function Github() {
-  const observerRef = useIntersectionObserver('visible');
 
-  useEffect(() => {
-    const calendar = document.querySelector('.github-calendar');
-    observerRef.current.observe(calendar);
-
-    return () => {
-      observerRef.current.unobserve(calendar);
-    };
-  }, [observerRef]);
 
   return (
     <Grid container justifyContent="center" sx={{ paddingBottom: "5%" }}>
@@ -23,7 +13,6 @@ function Github() {
       >
         My Github <strong id="lblYellow">Calendar</strong>
       </Typography>
-      <div className="github-calendar">
         <GitHubCalendar
           username="Markkk21"
           blockSize={15}
@@ -31,7 +20,6 @@ function Github() {
           color="white"
           fontSize={16}
         />
-      </div>
     </Grid>
   );
 }

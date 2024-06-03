@@ -172,16 +172,6 @@
     line-height: 1.6 !important;
   }
 
-  .github-calendar {
-    opacity: 0.5;
-    transform: translateY(20px);
-    transition: all 0.4s ease 0s;
-  }
-  
-  .github-calendar.visible {
-    opacity: 0.93;
-    transform: translateY(0);
-  }
   
 
 /* ------- */
@@ -194,7 +184,7 @@
     }
 
     #containerDetails {
-        margin-top: 17%;
+        margin-top: 12%;
     }
 
     #projectBox {

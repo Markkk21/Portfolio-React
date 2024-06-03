@@ -104,7 +104,6 @@ function QueueVistaDetails() {
 
           <UI/>
 
-
       </Container>
     </Container>
   );
