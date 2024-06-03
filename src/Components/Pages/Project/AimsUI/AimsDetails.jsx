@@ -91,7 +91,7 @@ function AimsDetails() {
             flexDirection="column"
           >
             <Typography variant="h3" whiteSpace="nowrap" sx={{marginBottom: "2%",textAlign: {xs: "center"}}}>
-                Ingress/<strong id='lblYellow'>Egress</strong>
+                AIMS <strong id='lblYellow'>Modules</strong>
             </Typography>
 
           </Grid>
