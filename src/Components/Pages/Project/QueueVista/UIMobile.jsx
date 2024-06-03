@@ -22,35 +22,35 @@ const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'Home – Mobile',
+    label: 'Home – Client',
     imgPath: Home,
       
   },
   {
-    label: 'Register – Mobile',
+    label: 'Register – Client',
     imgPath: Register,
       
   },
   {
-    label: 'Login – Mobile',
+    label: 'Login – Client',
     imgPath: Login,
       
   },
   {
-    label: 'Dashboard – Mobile',
+    label: 'Dashboard – Client',
     imgPath: Dashboard,
       
   },
   {
-    label: 'Get Queue Number – Mobile',
+    label: 'Get Queue Number – Client',
     imgPath: Number,
   },
   {
-    label: 'Show Queue Number – Mobile',
+    label: 'Show Queue Number – Client',
     imgPath: QueueNumber,
   },
   {
-    label: 'Feedback – Mobile',
+    label: 'Feedback – Client',
     imgPath: Feedback,
   },
 ];

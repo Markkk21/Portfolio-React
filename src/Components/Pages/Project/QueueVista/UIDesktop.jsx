@@ -9,29 +9,58 @@ import KeyboardArrowRight from '@mui/icons-material/KeyboardArrowRight';
 import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 
-import Project from '../../../../img/project.png'
+// Photos
+import Home from '../../../../img/QueueVista/Desktop/Admin/HomeDesktop.png'
+import Login from '../../../../img/QueueVista/Desktop/Admin/LoginDesktop.png'
+import DashboardAdmin from '../../../../img/QueueVista/Desktop/Admin/DashboardDesktop.png'
+import ClientAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminClient.png'
+import StaffAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminStaff.png'
+import WindowAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminWindows.png'
+import PurposeAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminPurpose.png'
+import AccountAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminAccount.png'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'San Francisco – Oakland Bay Bridge, United States',
-    imgPath:
-      'https://images.unsplash.com/photo-1537944434965-cf4679d1a598?auto=format&fit=crop&w=400&h=250&q=60',
+    label: 'Home',
+    imgPath: Home,
+      
   },
   {
-    label: 'Bird',
-    imgPath:
-      'https://images.unsplash.com/photo-1538032746644-0212e812a9e7?auto=format&fit=crop&w=400&h=250&q=60',
+    label: 'Login',
+    imgPath: Login,
+      
   },
   {
-    label: 'Bali, Indonesia',
-    imgPath:
-      'https://images.unsplash.com/photo-1537996194471-e657df975ab4?auto=format&fit=crop&w=400&h=250',
+    label: 'Dashboard – Admin',
+    imgPath: DashboardAdmin,
+      
   },
   {
-    label: 'Goč, Serbia',
-    imgPath: Project,
+    label: 'Clients – Admin',
+    imgPath: ClientAdmin,
+      
+  },
+  {
+    label: 'Manage Staff – Admin',
+    imgPath: StaffAdmin,
+      
+  },
+  {
+    label: 'Manage Window – Admin',
+    imgPath: WindowAdmin,
+      
+  },
+  {
+    label: 'Manage Purpose – Admin',
+    imgPath: PurposeAdmin,
+      
+  },
+  {
+    label: 'Manage Account – Admin',
+    imgPath: AccountAdmin,
+      
   },
 ];
 
@@ -68,7 +97,7 @@ function QueueVistaPhoto() {
               <Box
                 component="img"
                 sx={{
-                  height: 270,
+                  height: 400,
                   display: 'block',
                   maxWidth: 450,
                   overflow: 'hidden',
