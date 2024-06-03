@@ -3,8 +3,10 @@ import Grid from "@mui/material/Grid";
 import PhotoAdmin from "./UIAdmin/UIAdmin";
 import HeadStaff from "./UIHeadStaff/UIHeadStaff";
 import Staff from "./UIStaff/UIStaff";
+
+import ExternalMonitor from '../../../../../img/QueueVista/ExternalMonitor.png';
 import QueueVistaPhotoMobile from "./UIMobile/UIMobile";
-import { Typography, Select, MenuItem } from "@mui/material";
+import { Typography, Select, MenuItem, Card } from "@mui/material";
 
 function UI() {
   const [selectedSlider, setSelectedSlider] = useState("slider1");
@@ -47,7 +49,7 @@ function UI() {
       >
         <Grid container alignItems="center" justifyContent="center">
           <Grid item>
-            <Typography variant="h4" textAlign="center" mb={2} mt={1}>
+            <Typography variant="h4" textAlign="center" mb={2} mt={1} mr={2}>
               Desktop
             </Typography>
           </Grid>
@@ -58,9 +60,35 @@ function UI() {
               sx={{
                 color: '#fff',
                 border: '1.7px solid rgba(212, 175, 55, 0.637)',
+                boxShadow: "4px 5px 4px 3px rgba(83, 70, 22, 0.637)",
                 backgroundColor: 'transparent',
                 '&:hover': {
-                  borderColor: 'currentColor', // Border color will stay when hovering
+                  borderColor: 'currentColor',
+                },
+                '& .MuiSelect-icon': {
+                  color: '#d4af37',
+                },
+                '& .MuiOutlinedInput-notchedOutline': {
+                  borderColor: 'rgba(212, 175, 55, 0.637)',
+                },
+                '&:hover .MuiOutlinedInput-notchedOutline': {
+                  borderColor: '#fff',
+                },
+                '&.Mui-focused .MuiOutlinedInput-notchedOutline': {
+                  borderColor: '#d4af37', 
+                },
+              }}
+              MenuProps={{
+                PaperProps: {
+                  sx: {
+                    bgcolor: 'rgba(0, 0, 0, 0.8)',
+                    '& .MuiMenuItem-root': {
+                      color: '#fff',
+                      '&:hover': {
+                        bgcolor: 'rgba(212, 175, 55, 0.637)', 
+                      },
+                    },
+                  },
                 },
               }}
             >
@@ -70,9 +98,7 @@ function UI() {
             </Select>
           </Grid>
         </Grid>
-        <Grid container spacing={2}         
-          flexDirection="column"
-          alignItems="center">
+        <Grid container spacing={2} flexDirection="column" alignItems="center">
           {selectedSlider === "slider1" && (
             <>
               <Grid item xs={12}>
@@ -96,6 +122,20 @@ function UI() {
           )}
         </Grid>
       </Grid>
+      <Grid
+          item
+          display="flex"
+          flexDirection="column"
+          alignItems="center"
+        >
+          <Typography variant="h4" textAlign="center" mb={2} mt={1}>
+            External Monitor
+          </Typography>
+          <Card id='photoBox'>
+            <img src={ExternalMonitor} alt="about" style={{ maxWidth: "100%", height: "auto", }} />
+          </Card>
+          
+        </Grid>
     </Grid>
   );
 }

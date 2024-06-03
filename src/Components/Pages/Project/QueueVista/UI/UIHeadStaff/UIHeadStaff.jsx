@@ -10,56 +10,32 @@ import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 
 // Photos
-import Home from '../../../../../../img/QueueVista/Desktop/Admin/HomeDesktop.png'
-import Login from '../../../../../../img/QueueVista/Desktop/Admin/LoginDesktop.png'
-import DashboardAdmin from '../../../../../../img/QueueVista/Desktop/Admin/DashboardDesktop.png'
-import ClientAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminClient.png'
-import StaffAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminStaff.png'
-import WindowAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminWindows.png'
-import PurposeAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminPurpose.png'
-import AccountAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminAccount.png'
+import DashboardHead from '../../../../../../img/QueueVista/Desktop/HeadStaff/HeadDashboard.png'
+import StaffHead from '../../../../../../img/QueueVista/Desktop/HeadStaff/HeadStaff.png'
+import PurposeHead from '../../../../../../img/QueueVista/Desktop/HeadStaff/HeadPurpose.png'
+import WindowHead from '../../../../../../img/QueueVista/Desktop/HeadStaff/HeadWindow.png'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'Home',
-    imgPath: Home,
+    label: 'Dashboard – Head Staff',
+    imgPath: DashboardHead,
       
   },
   {
-    label: 'Login',
-    imgPath: Login,
+    label: 'Manage Staffs – Head Staff',
+    imgPath: StaffHead,
       
   },
   {
-    label: 'Dashboard – Admin',
-    imgPath: DashboardAdmin,
+    label: 'Manage Purpose – Head Staff',
+    imgPath: PurposeHead,
       
   },
   {
-    label: 'Clients – Admin',
-    imgPath: ClientAdmin,
-      
-  },
-  {
-    label: 'Manage Staff – Admin',
-    imgPath: StaffAdmin,
-      
-  },
-  {
-    label: 'Manage Window – Admin',
-    imgPath: WindowAdmin,
-      
-  },
-  {
-    label: 'Manage Purpose – Admin',
-    imgPath: PurposeAdmin,
-      
-  },
-  {
-    label: 'Manage Account – Admin',
-    imgPath: AccountAdmin,
+    label: 'Manage Windows – Head Staff',
+    imgPath: WindowHead,
       
   },
 ];

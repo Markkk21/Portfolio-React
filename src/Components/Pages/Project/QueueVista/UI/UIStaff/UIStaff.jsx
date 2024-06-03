@@ -10,56 +10,20 @@ import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 
 // Photos
-import Home from '../../../../../../img/QueueVista/Desktop/Admin/HomeDesktop.png'
-import Login from '../../../../../../img/QueueVista/Desktop/Admin/LoginDesktop.png'
-import DashboardAdmin from '../../../../../../img/QueueVista/Desktop/Admin/DashboardDesktop.png'
-import ClientAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminClient.png'
-import StaffAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminStaff.png'
-import WindowAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminWindows.png'
-import PurposeAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminPurpose.png'
-import AccountAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminAccount.png'
+import StaffDashboard from '../../../../../../img/QueueVista/Desktop/Staff/StaffDashboard.png'
+import StaffPriority from '../../../../../../img/QueueVista/Desktop/Staff/StaffPriority.png'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'Home',
-    imgPath: Home,
+    label: 'Staff Dashboard',
+    imgPath: StaffDashboard,
       
   },
   {
-    label: 'Login',
-    imgPath: Login,
-      
-  },
-  {
-    label: 'Dashboard – Admin',
-    imgPath: DashboardAdmin,
-      
-  },
-  {
-    label: 'Clients – Admin',
-    imgPath: ClientAdmin,
-      
-  },
-  {
-    label: 'Manage Staff – Admin',
-    imgPath: StaffAdmin,
-      
-  },
-  {
-    label: 'Manage Window – Admin',
-    imgPath: WindowAdmin,
-      
-  },
-  {
-    label: 'Manage Purpose – Admin',
-    imgPath: PurposeAdmin,
-      
-  },
-  {
-    label: 'Manage Account – Admin',
-    imgPath: AccountAdmin,
+    label: 'Staff Priority',
+    imgPath: StaffPriority,
       
   },
 ];

@@ -1,11 +1,10 @@
 import React from 'react';
-import { Grid, Card, Typography, Container, Breadcrumbs, Link as MuiLink } from '@mui/material';
+import { Grid, Typography, Container, Breadcrumbs, Link as MuiLink } from '@mui/material';
 import { Link } from 'react-router-dom';
 import Tline from './TimelineDetails';
 import Introduction from './Intro';
 import DevTools from './DevTools';
 import UI from './UI/UI';
-// import QueueVistaPhoto from './PhotoSlider';
 
 function QueueVistaDetails() {
   return (
@@ -103,6 +102,8 @@ function QueueVistaDetails() {
           </Typography>
 
           <UI/>
+
+
 
       </Container>
     </Container>
