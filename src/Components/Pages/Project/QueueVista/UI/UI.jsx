@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import PhotoAdmin from "./UIAdmin/UIAdmin";
 import HeadStaff from "./UIHeadStaff/UIHeadStaff";
@@ -7,11 +7,15 @@ import QueueVistaPhotoMobile from "./UIMobile/UIMobile";
 import { Typography, Select, MenuItem } from "@mui/material";
 
 function UI() {
-  const [selectedSlider, setSelectedSlider] = useState("");
+  const [selectedSlider, setSelectedSlider] = useState("slider1");
 
   const handleSliderChange = (event) => {
     setSelectedSlider(event.target.value);
   };
+
+  useEffect(() => {
+    setSelectedSlider("slider1");
+  }, []);
 
   return (
     <Grid
@@ -41,18 +45,34 @@ function UI() {
         flexDirection="column"
         alignItems="center"
       >
-        <Typography variant="h4" textAlign="center" mb={2} mt={1}>
-          Desktop
-          <Select
-            value={selectedSlider}
-            onChange={handleSliderChange}
-          >
-            <MenuItem value="slider1">Admin</MenuItem>
-            <MenuItem value="slider2">Head Staff</MenuItem>
-            <MenuItem value="slider3">Staff</MenuItem>
-          </Select>
-        </Typography>
-        <Grid container spacing={2}>
+        <Grid container alignItems="center" justifyContent="center">
+          <Grid item>
+            <Typography variant="h4" textAlign="center" mb={2} mt={1}>
+              Desktop
+            </Typography>
+          </Grid>
+          <Grid item>
+            <Select
+              value={selectedSlider}
+              onChange={handleSliderChange}
+              sx={{
+                color: '#fff',
+                border: '1.7px solid rgba(212, 175, 55, 0.637)',
+                backgroundColor: 'transparent',
+                '&:hover': {
+                  borderColor: 'currentColor', // Border color will stay when hovering
+                },
+              }}
+            >
+              <MenuItem value="slider1">Admin</MenuItem>
+              <MenuItem value="slider2">Head Staff</MenuItem>
+              <MenuItem value="slider3">Staff</MenuItem>
+            </Select>
+          </Grid>
+        </Grid>
+        <Grid container spacing={2}         
+          flexDirection="column"
+          alignItems="center">
           {selectedSlider === "slider1" && (
             <>
               <Grid item xs={12}>
