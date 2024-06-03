@@ -64,6 +64,7 @@ function AssetPRODetails() {
           >
           <Typography variant='h2' textAlign='center' mb={2}>
             Asset<strong id='lblYellow'>PRO</strong>
+            <Typography variant='h5'>Asset Management System</Typography>
           </Typography>
           
         </Grid>

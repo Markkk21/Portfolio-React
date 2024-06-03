@@ -63,6 +63,7 @@ function QueueVistaDetails() {
           >
           <Typography variant='h2' textAlign='center' mb={2}>
             Queue<strong id='lblYellow'>Vista</strong>
+            <Typography variant='h5'>Digital Waiting Aide</Typography>
           </Typography>
           
         </Grid>

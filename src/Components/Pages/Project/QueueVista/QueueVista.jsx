@@ -17,7 +17,7 @@ function QueueVista() {
           />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div" id='lblTitle'>
-              QueueVista - Digital Waiting Aide
+              QueueVista
             </Typography>
             <Typography variant="body2">
             QueueVista is a capstone project consisting of 4 members, built with Laravel, Bootstrap, and MySQL. It is a web-based queue management system that can also be used in a mobile web browser.
