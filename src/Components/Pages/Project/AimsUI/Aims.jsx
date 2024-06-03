@@ -7,8 +7,7 @@ function Aims() {
   return (
     <Grid>
       {/* Projects */}
-      {/* <Card component={Link} to="/aims-details" style={{ textDecoration: 'none', color: 'inherit'}}> */}
-      <Card component={Link} style={{ textDecoration: 'none', color: 'inherit'}}>
+      <Card component={Link} to="/aims-details" style={{ textDecoration: 'none', color: 'inherit'}}>
         <CardActionArea>
           <CardMedia
             component="img"
