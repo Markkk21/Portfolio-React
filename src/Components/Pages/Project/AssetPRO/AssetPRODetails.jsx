@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 
 import Description from './Description';
 import DevTools from './DevTools';
+import UIButton from './UI';
 // import UI from './UI/UI';
 
 function AssetPRODetails() {
@@ -63,8 +64,6 @@ function AssetPRODetails() {
           <Typography variant='h2' textAlign='center' mb={2}>
             Asset<strong id='lblYellow'>PRO</strong>
           </Typography>
-
-          <Description/>
           
         </Grid>
 
@@ -78,14 +77,10 @@ function AssetPRODetails() {
             flexDirection="column"
           >
             <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "2%", textAlign: {xs: "center"}}}>
-              Task <strong id='lblYellow'>Assigned</strong>
+            Assigned <strong id='lblYellow'>Tasks</strong>
             </Typography>
-            {/* <Introduction/> */}
-
-            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "12%", textAlign: {xs: "center"}}}>
-            <strong id='lblYellow'>Dev </strong>Tools
-            </Typography>
-            <DevTools/>
+            
+            <Description/>
 
           </Grid>
 
@@ -95,7 +90,13 @@ function AssetPRODetails() {
             display="flex"
             flexDirection="column"
           >
+            
+            <UIButton/>
           </Grid>
+          <Typography variant="h3" whiteSpace="nowrap" sx={{textAlign: {xs: "center"}}}>
+            <strong id='lblYellow'>Dev </strong>Tools
+            </Typography>
+            <DevTools/>
         </Grid>
       </Container>
     </Container>
