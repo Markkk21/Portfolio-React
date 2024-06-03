@@ -10,14 +10,14 @@ import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 
 // Photos
-import Home from '../../../../img/QueueVista/Desktop/Admin/HomeDesktop.png'
-import Login from '../../../../img/QueueVista/Desktop/Admin/LoginDesktop.png'
-import DashboardAdmin from '../../../../img/QueueVista/Desktop/Admin/DashboardDesktop.png'
-import ClientAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminClient.png'
-import StaffAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminStaff.png'
-import WindowAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminWindows.png'
-import PurposeAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminPurpose.png'
-import AccountAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminAccount.png'
+import Home from '../../../../../../img/QueueVista/Desktop/Admin/HomeDesktop.png'
+import Login from '../../../../../../img/QueueVista/Desktop/Admin/LoginDesktop.png'
+import DashboardAdmin from '../../../../../../img/QueueVista/Desktop/Admin/DashboardDesktop.png'
+import ClientAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminClient.png'
+import StaffAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminStaff.png'
+import WindowAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminWindows.png'
+import PurposeAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminPurpose.png'
+import AccountAdmin from '../../../../../../img/QueueVista/Desktop/Admin/AdminAccount.png'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
@@ -97,7 +97,7 @@ function UIHeadStaff() {
               <Box
                 component="img"
                 sx={{
-                  height: 300,
+                  height: 350,
                   display: 'block',
                   maxWidth: 500,
                   overflow: 'hidden',

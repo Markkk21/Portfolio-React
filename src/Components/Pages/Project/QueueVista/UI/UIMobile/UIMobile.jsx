@@ -10,61 +10,52 @@ import SwipeableViews from 'react-swipeable-views';
 import { autoPlay } from 'react-swipeable-views-utils';
 
 // Photos
-import Home from '../../../../img/QueueVista/Desktop/Admin/HomeDesktop.png'
-import Login from '../../../../img/QueueVista/Desktop/Admin/LoginDesktop.png'
-import DashboardAdmin from '../../../../img/QueueVista/Desktop/Admin/DashboardDesktop.png'
-import ClientAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminClient.png'
-import StaffAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminStaff.png'
-import WindowAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminWindows.png'
-import PurposeAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminPurpose.png'
-import AccountAdmin from '../../../../img/QueueVista/Desktop/Admin/AdminAccount.png'
+import Home from '../../../../../../img/QueueVista/Mobile/HomeMobile.png'
+import Register from '../../../../../../img/QueueVista/Mobile/RegisterMobile.png'
+import Login from '../../../../../../img/QueueVista/Mobile/LoginMobile.png'
+import Dashboard from '../../../../../../img/QueueVista/Mobile/DashboardMobile.png'
+import Number from '../../../../../../img/QueueVista/Mobile/GetNumberMobile.png'
+import QueueNumber from '../../../../../../img/QueueVista/Mobile/QueueNumberMobile.png'
+import Feedback from '../../../../../../img/QueueVista/Mobile/FeedbackMobile.png'
 
 const AutoPlaySwipeableViews = autoPlay(SwipeableViews);
 
 const images = [
   {
-    label: 'Home',
+    label: 'Home – Client',
     imgPath: Home,
       
   },
   {
-    label: 'Login',
+    label: 'Register – Client',
+    imgPath: Register,
+      
+  },
+  {
+    label: 'Login – Client',
     imgPath: Login,
       
   },
   {
-    label: 'Dashboard – Admin',
-    imgPath: DashboardAdmin,
+    label: 'Dashboard – Client',
+    imgPath: Dashboard,
       
   },
   {
-    label: 'Clients – Admin',
-    imgPath: ClientAdmin,
-      
+    label: 'Get Queue Number – Client',
+    imgPath: Number,
   },
   {
-    label: 'Manage Staff – Admin',
-    imgPath: StaffAdmin,
-      
+    label: 'Show Queue Number – Client',
+    imgPath: QueueNumber,
   },
   {
-    label: 'Manage Window – Admin',
-    imgPath: WindowAdmin,
-      
-  },
-  {
-    label: 'Manage Purpose – Admin',
-    imgPath: PurposeAdmin,
-      
-  },
-  {
-    label: 'Manage Account – Admin',
-    imgPath: AccountAdmin,
-      
+    label: 'Feedback – Client',
+    imgPath: Feedback,
   },
 ];
 
-function UIAdmin() {
+function UIMobile() {
   const theme = useTheme();
   const [activeStep, setActiveStep] = React.useState(0);
   const maxSteps = images.length;
@@ -82,7 +73,7 @@ function UIAdmin() {
   };
 
   return (
-    <Box sx={{ maxWidth: 500, flexGrow: 1, border: "1.7px solid rgba(212, 175, 55, 0.637)", boxShadow: "4px 5px 4px 3px rgba(83, 70, 22, 0.637)" }}>
+    <Box sx={{ maxWidth: 450, flexGrow: 1, border: "1.7px solid rgba(212, 175, 55, 0.637)", boxShadow: "4px 5px 4px 3px rgba(83, 70, 22, 0.637)" }}>
 
       <Typography>{images[activeStep].label}</Typography>
       <AutoPlaySwipeableViews
@@ -97,9 +88,9 @@ function UIAdmin() {
               <Box
                 component="img"
                 sx={{
-                  height: 300,
+                  height: 350,
                   display: 'block',
-                  maxWidth: 500,
+                  maxWidth: 450,
                   overflow: 'hidden',
                   width: '100%',
                 }}
@@ -157,4 +148,4 @@ function UIAdmin() {
   );
 }
 
-export default UIAdmin;
+export default UIMobile;

@@ -1,7 +1,9 @@
 import React, { useState } from "react";
 import Grid from "@mui/material/Grid";
-import PhotoAdmin from "./UIAdmin";
-import QueueVistaPhotoMobile from "./UIMobile";
+import PhotoAdmin from "./UIAdmin/UIAdmin";
+import HeadStaff from "./UIHeadStaff/UIHeadStaff";
+import Staff from "./UIStaff/UIStaff";
+import QueueVistaPhotoMobile from "./UIMobile/UIMobile";
 import { Typography, Select, MenuItem } from "@mui/material";
 
 function UI() {
@@ -41,22 +43,34 @@ function UI() {
       >
         <Typography variant="h4" textAlign="center" mb={2} mt={1}>
           Desktop
+          <Select
+            value={selectedSlider}
+            onChange={handleSliderChange}
+          >
+            <MenuItem value="slider1">Admin</MenuItem>
+            <MenuItem value="slider2">Head Staff</MenuItem>
+            <MenuItem value="slider3">Staff</MenuItem>
+          </Select>
         </Typography>
-        <Select
-          value={selectedSlider}
-          onChange={handleSliderChange}
-          sx={{ marginBottom: 2 }}
-        >
-          <MenuItem value="slider1">Admin</MenuItem>
-          <MenuItem value="slider2">Head Staff</MenuItem>
-          <MenuItem value="slider3">Staff</MenuItem>
-          {/* Add more sliders as needed */}
-        </Select>
         <Grid container spacing={2}>
-          {selectedSlider && (
+          {selectedSlider === "slider1" && (
             <>
-              <Grid item xs={12} md={4}>
-                <PhotoAdmin slider={selectedSlider} />
+              <Grid item xs={12}>
+                <PhotoAdmin />
+              </Grid>
+            </>
+          )}
+          {selectedSlider === "slider2" && (
+            <>
+              <Grid item xs={12}>
+                <HeadStaff />
+              </Grid>
+            </>
+          )}
+          {selectedSlider === "slider3" && (
+            <>
+              <Grid item xs={12}>
+                <Staff />
               </Grid>
             </>
           )}

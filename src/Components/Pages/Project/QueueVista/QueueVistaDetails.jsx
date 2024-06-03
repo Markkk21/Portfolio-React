@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import Tline from './TimelineDetails';
 import Introduction from './Intro';
 import DevTools from './DevTools';
-import UI from './UI';
+import UI from './UI/UI';
 // import QueueVistaPhoto from './PhotoSlider';
 
 function QueueVistaDetails() {
