@@ -190,10 +190,21 @@
     #projectBox {
         margin-bottom: 10%;
     }
+    
+    #containerAssetPRODetails {
+        margin-top: 12%;
+    }
 }
   
 
 #containerProject {
+    position: relative;
+    padding-top: 5%;
+    padding-bottom: 30px;
+    min-height: 100vh;
+}
+
+#containerAssetPRODetails {
     position: relative;
     padding-top: 5%;
     padding-bottom: 30px;

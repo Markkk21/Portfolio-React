@@ -134,7 +134,6 @@ function UI() {
           <Card id='photoBox'>
             <img src={ExternalMonitor} alt="about" style={{ maxWidth: "100%", height: "auto", }} />
           </Card>
-          
         </Grid>
     </Grid>
   );
