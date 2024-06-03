@@ -1,6 +1,7 @@
 import React from "react";
 import Grid from "@mui/material/Grid";
-import QueueVistaPhoto from "./PhotoSlider";
+import QueueVistaPhotoDesktop from "./UIDesktop";
+import QueueVistaPhotoMobile from "./UIMobile";
 import { Typography } from "@mui/material";
 
 function UI() {
@@ -17,7 +18,7 @@ function UI() {
             <Typography variant='h4' textAlign='center' mb={2} mt={1}>
             Mobile
             </Typography>
-                <QueueVistaPhoto/>
+              <QueueVistaPhotoMobile/>
         </Grid>
 
         <Grid             
@@ -30,7 +31,7 @@ function UI() {
             <Typography variant='h4' textAlign='center' mb={2} mt={1}>
             Desktop
             </Typography>
-            <QueueVistaPhoto/>
+              <QueueVistaPhotoDesktop/>
         </Grid>
     </Grid>
   );
