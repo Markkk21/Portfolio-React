@@ -38,6 +38,7 @@ function Navbar(props) {
         {navItems.map((item) => (
           <ListItem key={item.name} disablePadding>
             <ListItemButton 
+              className="navButtonMobile"
               component={Link} 
               to={item.path} 
               sx={{ color: isCurrentPath(item.path) ? '#d4af37' : 'inherit'}} // Apply color based on the current path
