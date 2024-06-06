@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect } from "react";
 import Grid from "@mui/material/Grid";
 import {
   DiJavascript1,
@@ -14,8 +14,9 @@ import {
   SiLaravel,
   SiMui,
 } from "react-icons/si";
-import { TbBrandReactNative  } from "react-icons/tb";
+import { TbBrandReactNative } from "react-icons/tb";
 import useIntersectionObserver from '../../Layout/Transition';
+// import './TechSkill.css'; // Import the CSS file
 
 function TechSkill() {
   const observerRef = useIntersectionObserver('visible');
@@ -47,7 +48,16 @@ function TechSkill() {
     <Grid container spacing={2} justifyContent="center" style={{ paddingBottom: "5%" }}>
       {techSkills.map(skill => (
         <Grid item xs={4} md={2} className="tech-icons" key={skill.key}>
-          {skill.icon}
+          <div className="flip-card">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                {skill.icon}
+              </div>
+              <div className="flip-card-back">
+                {skill.key}
+              </div>
+            </div>
+          </div>
         </Grid>
       ))}
     </Grid>
