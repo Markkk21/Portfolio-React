@@ -48,16 +48,16 @@ function TechSkill() {
     <Grid container spacing={2} justifyContent="center" style={{ paddingBottom: "5%" }}>
       {techSkills.map(skill => (
         <Grid item xs={4} md={2} className="tech-icons" key={skill.key}>
-          <div className="flip-card">
-            <div className="flip-card-inner">
-              <div className="flip-card-front">
+          <Grid className="flip-card">
+            <Grid className="flip-card-inner">
+              <Grid className="flip-card-front">
                 {skill.icon}
-              </div>
-              <div className="flip-card-back">
+              </Grid>
+              <Grid className="flip-card-back">
                 <CustomGauge value={skill.value} />
-              </div>
-            </div>
-          </div>
+              </Grid>
+            </Grid>
+          </Grid>
         </Grid>
       ))}
     </Grid>

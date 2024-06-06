@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import { Container, Grid, Box, Switch, Button, colors } from "@mui/material";
+import { Container, Grid, Box, Switch, Button, colors, Typography } from "@mui/material";
 import { AiOutlineDownload } from "react-icons/ai";
 import { TbEyeClosed, TbEye } from "react-icons/tb";
 import { Document, Page, pdfjs } from "react-pdf";
@@ -36,14 +36,26 @@ function ResumeNew() {
     <Container fluid id="resumeContainer">
       <Grid container spacing={2} justifyContent="space-between">
         <Grid item>
-          <Button
+          {/* <Button
             id="btnResume"
             variant="contained"
             onClick={handleDownload}
             startIcon={<AiOutlineDownload />}
           >
             Download Résumé
-          </Button>
+          </Button> */}
+          <Box className="css-button"  id="btnResume" component="div" onClick={handleDownload}>
+            <Typography className="css-button-text" component="p" textAlign='center'>
+            Download Résumé
+            </Typography>
+            <Box className="css-button-inner" component="div">
+              <Box className="reset-skew" component="div">
+                <Typography className="css-button-inner-text" component="p">
+                  Download Résumé
+                </Typography>
+              </Box>
+            </Box>
+          </Box>
         </Grid>
         <Grid item>
           <Switch
