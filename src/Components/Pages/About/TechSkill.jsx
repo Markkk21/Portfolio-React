@@ -22,17 +22,17 @@ function TechSkill() {
   const observerRef = useIntersectionObserver('visible');
 
   const techSkills = [
-    { icon: <DiHtml5 />, key: "html5", value: 80 },
+    { icon: <DiHtml5 />, key: "html5", value: 70 },
     { icon: <DiCss3 />, key: "css3", value: 70 },
-    { icon: <DiJavascript1 />, key: "js", value: 90 },
-    { icon: <DiReact />, key: "react", value: 85 },
-    { icon: <SiMui />, key: "mui", value: 60 },
-    { icon: <SiPhp />, key: "php", value: 50 },
-    { icon: <SiLaravel />, key: "laravel", value: 55 },
-    { icon: <DiPython />, key: "python", value: 75 },
-    { icon: <TbBrandReactNative />, key: "react-native", value: 65 },
-    { icon: <SiBootstrap />, key: "bootstrap", value: 70 },
-    { icon: <DiJava />, key: "java", value: 60 },
+    { icon: <DiJavascript1 />, key: "js", value: 50 },
+    { icon: <DiReact />, key: "react", value: 50 },
+    { icon: <SiMui />, key: "mui", value: 50 },
+    { icon: <SiPhp />, key: "php", value: 40 },
+    { icon: <SiLaravel />, key: "laravel", value: 40 },
+    { icon: <DiPython />, key: "python", value: 40 },
+    { icon: <TbBrandReactNative />, key: "react-native", value: 40 },
+    { icon: <SiBootstrap />, key: "bootstrap", value: 60 },
+    { icon: <DiJava />, key: "java", value: 40 },
   ];
 
   useEffect(() => {

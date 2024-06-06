@@ -4,7 +4,7 @@ import { Box, CircularProgress, Typography } from '@mui/material';
 function CustomGauge({ value, label }) {
   return (
     <Box position="relative" display="inline-flex">
-      <CircularProgress variant="determinate" value={value} size={100} />
+      <CircularProgress variant="determinate" value={value} size={100} id="gaugeLayout"/>
       <Box
         top={0}
         left={0}
@@ -15,7 +15,7 @@ function CustomGauge({ value, label }) {
         alignItems="center"
         justifyContent="center"
       >
-        <Typography variant="caption" component="div">
+        <Typography variant="h5" component="div">
           {`${Math.round(value)}%`}
         </Typography>
       </Box>

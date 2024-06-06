@@ -176,7 +176,7 @@
 
 .flip-card {
     width: 100%;
-    height: 17vh;
+    height: 15vh;
 }
 
 .flip-card-inner {
@@ -458,3 +458,10 @@
 }
 
 
+/* ----- */
+/* Gauge */
+/* ----- */
+
+#gaugeLayout {
+    color: #d1ac00;
+}
