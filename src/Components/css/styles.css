@@ -136,7 +136,7 @@
 /* ------- */
 
 .tech-icons {
-    font-size: 4.5em !important;
+    font-size: 5em !important;
     margin: 15px !important;
     padding: 10px !important;
     opacity: 0.5 !important; /* Initial opacity */
@@ -176,7 +176,7 @@
 
 .flip-card {
     width: 100%;
-    height: 15vh;
+    height: 17vh;
 }
 
 .flip-card-inner {
