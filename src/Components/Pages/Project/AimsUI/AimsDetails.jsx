@@ -90,15 +90,24 @@ function AimsDetails() {
             display="flex"
             flexDirection="column"
           >
-            <Typography variant="h3" whiteSpace="nowrap" sx={{marginBottom: "2%",textAlign: {xs: "center"}}}>
-                AIMS <strong id='lblYellow'>Modules</strong>
-            </Typography>
 
           </Grid>
-          <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "4%",textAlign: {xs: "center"}}}>
-            <strong id='lblYellow'>Dev </strong>Tools
+
+          <Grid            
+            item
+            xs={12}
+          >            
+            <Typography variant="h3" whiteSpace="nowrap" sx={{marginBottom: "2%",textAlign: {xs: "center"}}}>
+              AIMS <strong id='lblYellow'>Modules</strong>
+            </Typography>
+          </Grid>
+
+          <Grid>
+            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "4%",textAlign: {xs: "center"}}}>
+              <strong id='lblYellow'>Dev </strong>Tools
             </Typography>
             <DevTools/>
+          </Grid>
         </Grid>
       </Container>
     </Container>
