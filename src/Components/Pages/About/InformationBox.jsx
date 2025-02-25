@@ -5,7 +5,7 @@ import EmailIcon from '@mui/icons-material/AlternateEmail';
 import GithubIcon from '@mui/icons-material/GitHub';
 
 import { CiMountain1 } from "react-icons/ci";
-import { CgGames, CgGym } from "react-icons/cg";
+import { CgGames } from "react-icons/cg";
 import { MdCardTravel } from "react-icons/md";
 
 function InfoBox() {

@@ -4,7 +4,7 @@ import './App.css';
 import './Components/css/styles.css';
 import './Components/css/font.css'; 
 
-import { BrowserRouter as Router, Route, Routes } from 'react-router-dom';
+import { HashRouter as Router, Route, Routes } from 'react-router-dom';
 
 import Dashboard from './Components/Pages/Dashboard';
 import DrawerAppBar from './Components/Layout/Navbar';
