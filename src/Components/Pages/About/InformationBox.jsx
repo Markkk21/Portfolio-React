@@ -4,6 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/AlternateEmail';
 import GithubIcon from '@mui/icons-material/GitHub';
 
+import { CiMountain1 } from "react-icons/ci";
 import { CgGames, CgGym } from "react-icons/cg";
 import { MdCardTravel } from "react-icons/md";
 
@@ -27,8 +28,8 @@ function InfoBox() {
                 <Typography ml={1}>Traveling</Typography>
               </ListItem>
               <ListItem>
-                <CgGym/>
-                <Typography ml={1}>Gym</Typography>
+                <CiMountain1 />
+                <Typography ml={1}>Hiking</Typography>
               </ListItem>
 
             </List>
