@@ -4,7 +4,7 @@ import { AiOutlineDownload } from "react-icons/ai";
 import { TbEyeClosed, TbEye } from "react-icons/tb";
 import { Document, Page, pdfjs } from "react-pdf";
 import "react-pdf/dist/esm/Page/AnnotationLayer.css";
-import pdf from "../ResumeDownload/Mark_Joshua_Garcia_Resume.pdf"; // File Directory
+import pdf from "../ResumeDownload/Mark_Joshua_Garcia_Resume.docx.pdf"; // File Directory
 
 pdfjs.GlobalWorkerOptions.workerSrc = `//cdnjs.cloudflare.com/ajax/libs/pdf.js/${pdfjs.version}/pdf.worker.min.js`;
 
