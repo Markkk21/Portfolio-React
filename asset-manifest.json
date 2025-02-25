@@ -1,12 +1,12 @@
 {
   "files": {
     "main.css": "/Portfolio-React/static/css/main.b51aa6e7.css",
-    "main.js": "/Portfolio-React/static/js/main.fc60c16f.js",
+    "main.js": "/Portfolio-React/static/js/main.6226dd60.js",
     "static/js/453.5858e738.chunk.js": "/Portfolio-React/static/js/453.5858e738.chunk.js",
     "static/media/MyPhoto.png": "/Portfolio-React/static/media/MyPhoto.edfb6ef3fe4c7e12e2be.png",
     "static/media/bg.jpg": "/Portfolio-React/static/media/bg.f8edaa880608e9850c19.jpg",
     "static/media/Raleway-Regular.ttf": "/Portfolio-React/static/media/Raleway-Regular.d9219d8a361ac3530c7e.ttf",
-    "static/media/Mark_Joshua_Garcia_Resume.pdf": "/Portfolio-React/static/media/Mark_Joshua_Garcia_Resume.589d7918b64eb8d81710.pdf",
+    "static/media/Mark_Joshua_Garcia_Resume.docx.pdf": "/Portfolio-React/static/media/Mark_Joshua_Garcia_Resume.docx.c8439d8f60fc7dec17b1.pdf",
     "static/media/DashboardDesktop.png": "/Portfolio-React/static/media/DashboardDesktop.d9a51af8d42014d1474f.png",
     "static/media/HeadDashboard.png": "/Portfolio-React/static/media/HeadDashboard.46a28e2fa5785016ad66.png",
     "static/media/ExternalMonitor.png": "/Portfolio-React/static/media/ExternalMonitor.20785925a6a84a824e1d.png",
@@ -37,11 +37,11 @@
     "index.html": "/Portfolio-React/index.html",
     "static/media/loader.svg": "/Portfolio-React/static/media/loader.e3b5f2ab7b18b8d0d2bc.svg",
     "main.b51aa6e7.css.map": "/Portfolio-React/static/css/main.b51aa6e7.css.map",
-    "main.fc60c16f.js.map": "/Portfolio-React/static/js/main.fc60c16f.js.map",
+    "main.6226dd60.js.map": "/Portfolio-React/static/js/main.6226dd60.js.map",
     "453.5858e738.chunk.js.map": "/Portfolio-React/static/js/453.5858e738.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.b51aa6e7.css",
-    "static/js/main.fc60c16f.js"
+    "static/js/main.6226dd60.js"
   ]
 }
