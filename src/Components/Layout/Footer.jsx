@@ -11,7 +11,7 @@ const Footer = () => {
 
         <Grid xs={12} md={4}>
           <Typography variant="subtitle2" color="inherit" align="center" display="inline-block" marginTop='3%'>
-            Designed and Developed by Mark Joshua Garcia
+            Designed and Developed by Mj
           </Typography>
         </Grid>
 

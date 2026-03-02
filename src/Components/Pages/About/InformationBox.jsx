@@ -4,7 +4,7 @@ import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import EmailIcon from '@mui/icons-material/AlternateEmail';
 import GithubIcon from '@mui/icons-material/GitHub';
 
-import { CiMountain1 } from "react-icons/ci";
+// import { CiMountain1 } from "react-icons/ci";
 import { CgGames } from "react-icons/cg";
 import { MdCardTravel } from "react-icons/md";
 
@@ -14,8 +14,7 @@ function InfoBox() {
     <div id="containerInfo">
         <Grid>
           <Typography variant="body1" sx={{ textAlign: { xs: 'center', lg: 'left' }}}>
-            <Typography variant="h6">Hi! I'm <strong id='lblYellow'>Mark Joshua Garcia</strong>, a front-end and web developer with experience in programming responsive websites. 
-            I graduated from Wesleyan University-Philippines with a <strong id='lblYellow'> Bachelor of Information Technology.</strong></Typography>
+            <Typography variant="h6">I am a <strong id='lblYellow'>Software Engineer</strong> with experience in mobile and web development using C#, .NET, Xamarin, and ReactJS. I have built scalable applications with barcode and RFID integration. I’m passionate about creating efficient, user-friendly software solutions and am always willing to explore new challenges and technologies.</Typography>
 
             <Typography variant="h6" mt={4}>Apart from coding, I love engaging in other activities!</Typography>
             <List>
@@ -27,10 +26,10 @@ function InfoBox() {
                 <MdCardTravel/>
                 <Typography ml={1}>Traveling</Typography>
               </ListItem>
-              <ListItem>
-                <CiMountain1 />
-                <Typography ml={1}>Hiking</Typography>
-              </ListItem>
+                {/* <ListItem>
+                  <CiMountain1 />
+                  <Typography ml={1}>Hiking</Typography>
+                </ListItem> */}
 
             </List>
             

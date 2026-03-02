@@ -3,7 +3,7 @@ import { Typography, Grid, Container, Card } from '@mui/material';
 
 import MyPhoto from '../../../img/MyPhoto.png';
 import InformationBox from './InformationBox';
-
+import Experiences from './Experiences';
 import Techstack from "./TechSkill";
 import Tools from './Tools';
 import Github from './Github';
@@ -12,7 +12,23 @@ const AboutMe = () => {
   return (
     <Container maxWidth={false} disableGutters className="about-section">
       <Container>
-        <Grid container justifyContent="center" spacing={3} padding="10px">
+        <Grid container justifyContent="center" spacing={3}>
+        <Grid
+            item
+            md={7}
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+          >
+            <Typography variant="h3" whiteSpace="nowrap" gutterBottom>
+              Mark Joshua Garcia
+            </Typography>
+            <Typography variant="body" whiteSpace="nowrap" gutterBottom>
+              Software Engineer | Mobile & Web Developer
+            </Typography>
+
+          </Grid>
+
           <Grid
             item
             md={7}
@@ -36,7 +52,7 @@ const AboutMe = () => {
             justifyContent="center"
             alignItems="center"
             paddingTop="120px"
-            paddingBottom="50px"
+            paddingBottom="40px"
           >
             <Grid>
               <Card id='photoBox'>
@@ -46,7 +62,9 @@ const AboutMe = () => {
           </Grid>
         </Grid>
 
-        <Typography variant='h3' textAlign='center' mb={2} mt={1}>
+        <Experiences/>
+
+        <Typography variant='h3' textAlign='center' mb={2} mt={3}>
           Technical <strong id='lblYellow'>Skills </strong>
         </Typography>
 

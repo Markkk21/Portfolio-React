@@ -9,7 +9,7 @@ const Dashboard = () => {
   return (
     <div id="containerDashboard">
       <Tilt><img src={MarkLogo} alt="Logo" id="logoDashboard"/></Tilt>
-        <Typography variant='h3' id="lblMark">I'm Mark,
+        <Typography variant='h3' id="lblMark">I'm Mj,
           <Typography variant='body1' id="lblSubtitle"><Typewriter/>
           </Typography>
         </Typography>

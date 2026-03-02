@@ -4,17 +4,18 @@ import {
   DiJavascript1,
   DiReact,
   DiPython,
-  DiHtml5,
-  DiCss3,
-  DiJava,
 } from "react-icons/di";
+import { 
+  TbBrandXamarin,
+  TbBrandCSharp } from "react-icons/tb";
 import {
   SiPhp,
   SiBootstrap,
   SiLaravel,
   SiMui,
 } from "react-icons/si";
-import { TbBrandReactNative } from "react-icons/tb";
+import { AiOutlineDotNet } from "react-icons/ai";
+
 import useIntersectionObserver from '../../Layout/Transition';
 import CustomGauge from '../../Layout/Gauge';
 
@@ -22,17 +23,16 @@ function TechSkill() {
   const observerRef = useIntersectionObserver('visible');
 
   const techSkills = [
-    { icon: <DiHtml5 />, key: "html5", value: 70 },
-    { icon: <DiCss3 />, key: "css3", value: 70 },
+    { icon: <TbBrandCSharp />, key: "c#", value: 50 },
+    { icon: <TbBrandXamarin />, key: "xamarin", value: 50 },
+    { icon: <AiOutlineDotNet />, key: ".net", value: 50 },
     { icon: <DiJavascript1 />, key: "js", value: 50 },
     { icon: <DiReact />, key: "react", value: 50 },
     { icon: <SiMui />, key: "mui", value: 50 },
-    { icon: <SiPhp />, key: "php", value: 40 },
-    { icon: <SiLaravel />, key: "laravel", value: 40 },
-    { icon: <DiPython />, key: "python", value: 40 },
-    { icon: <TbBrandReactNative />, key: "react-native", value: 40 },
-    { icon: <SiBootstrap />, key: "bootstrap", value: 60 },
-    { icon: <DiJava />, key: "java", value: 40 },
+    { icon: <SiBootstrap />, key: "bootstrap", value: 40 },
+    { icon: <SiPhp />, key: "php", value: 20 },
+    { icon: <SiLaravel />, key: "laravel", value: 20 },
+    { icon: <DiPython />, key: "python", value: 20 },
   ];
 
   useEffect(() => {
