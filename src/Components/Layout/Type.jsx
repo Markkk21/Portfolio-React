@@ -7,8 +7,8 @@ function Type() {
       options={{
         strings: [
           "Software Engineer.",
-          "Web Developer.",
           "Mobile Developer.",
+          "Web Developer.",
           "Gamer.",
           // "Text Here", If want to add another text
         ],

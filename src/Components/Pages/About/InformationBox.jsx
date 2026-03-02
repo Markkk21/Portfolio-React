@@ -14,7 +14,8 @@ function InfoBox() {
     <div id="containerInfo">
         <Grid>
           <Typography variant="body1" sx={{ textAlign: { xs: 'center', lg: 'left' }}}>
-            <Typography variant="h6">I am a <strong id='lblYellow'>Software Engineer</strong> with experience in mobile and web development using C#, .NET, Xamarin, and ReactJS. I have built scalable applications with barcode and RFID integration. I’m passionate about creating efficient, user-friendly software solutions and am always willing to explore new challenges and technologies.</Typography>
+            <Typography variant="h6">I build software that's fast, clean, and easy to maintain. 
+            I enjoy solving problems, picking up new tools when needed, and continuously improving — both in my craft and as a teammate.</Typography>
 
             <Typography variant="h6" mt={4}>Apart from coding, I love engaging in other activities!</Typography>
             <List>
