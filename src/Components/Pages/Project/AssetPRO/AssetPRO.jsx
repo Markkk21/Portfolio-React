@@ -16,10 +16,9 @@ function AssetPRO() {
           />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div" id='lblTitle'> 
-              AssetPRO
+              Weather Application
             </Typography>
             <Typography variant="body2">
-            AssetPRO is a project of Golden Aurum System Solution Inc. During my internship, I was tasked with making the Ingress/Egress page responsive for mobile devices using React.js
             </Typography>
 
           </CardContent>

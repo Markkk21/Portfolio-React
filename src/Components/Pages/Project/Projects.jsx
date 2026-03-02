@@ -1,7 +1,7 @@
 import * as React from 'react';
 import { Grid, Card, Typography, Container} from '@mui/material';
 import QueueVista from './QueueVista/QueueVista';
-import Aims from './AimsUI/Aims';
+import WareTrack from './WareTrack/WareTrack';
 import AssetPRO from './AssetPRO/AssetPRO';
 // import { Toys } from '@mui/icons-material';
 
@@ -26,7 +26,7 @@ function ProjectList() {
             {/* Projects */}
             <Grid item xs={12} md={4}>
               <Card id='projectBox'>
-                <Aims/>
+                <WareTrack/>
               </Card>
             </Grid>
         

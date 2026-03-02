@@ -13,7 +13,7 @@ import ProjectsPage from './Components/Pages/Project/Projects';
 import ResumePage from './Components/Pages/Resume/Resume';
 import QueueVistaDetails from './Components/Pages/Project/QueueVista/QueueVistaDetails';
 import AssetPRODetails from './Components/Pages/Project/AssetPRO/AssetPRODetails';
-import AimsDetails from './Components/Pages/Project/AimsUI/AimsDetails';
+import WareTrackDetails from './Components/Pages/Project/WareTrack/WareTrackDetails';
 import Footer from './Components/Layout/Footer';
 import Preloader from './Components/Layout/Pre';
 import ScrollToTop from './Components/Layout/ScrollToTop';
@@ -48,7 +48,7 @@ function App() {
               <Route path="/resume" element={<ResumePage />} />
               <Route path="/queuevista-details" element={<QueueVistaDetails />} />
               <Route path="/assetpro-details" element={<AssetPRODetails />} />
-              <Route path="/aims-details" element={<AimsDetails />} />
+              <Route path="/waretrack-details" element={<WareTrackDetails />} />
             </Routes>
 
           {/* Footer */}

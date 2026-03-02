@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Description from './Description';
 import DevTools from './DevTools';
 
-function AimsDetails() {
+function WareTrackDetails() {
   return (
 
     <Container maxWidth={false} disableGutters id="containerAssetPRODetails">
@@ -49,7 +49,7 @@ function AimsDetails() {
           >
             Projects
           </MuiLink>
-          <Typography sx={{ color: '#d4af37' }}>AIMS</Typography>
+          <Typography sx={{ color: '#d4af37' }}>WareTrack</Typography>
         </Breadcrumbs>
 
         {/* Details */}
@@ -61,8 +61,8 @@ function AimsDetails() {
             mb={3}
           >
           <Typography variant='h2' textAlign='center' mb={2}>
-            <strong id='lblYellow'>AIMS</strong>
-            <Typography variant='h5'>Asset Inventory Management System</Typography>
+            <strong id='lblYellow'>WareTrack</strong>
+            <Typography variant='h5'>Warehouse Inventory Management System</Typography>
           </Typography>
           
         </Grid>
@@ -118,4 +118,4 @@ function AimsDetails() {
   );
 }
 
-export default AimsDetails;
+export default WareTrackDetails;

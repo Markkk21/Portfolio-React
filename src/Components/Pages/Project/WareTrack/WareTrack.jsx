@@ -3,23 +3,26 @@ import { Link } from 'react-router-dom';
 import { Grid, Typography, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
 import MyPhoto from '../../../../img/AIMS/AIMS.png';
 
-function Aims() {
+function WareTrack() {
   return (
     <Grid>
       {/* Projects */}
-      <Card component={Link} to="/aims-details" style={{ textDecoration: 'none', color: 'inherit'}}>
+      <Card component={Link} to="/waretrack-details" style={{ textDecoration: 'none', color: 'inherit'}}>
         <CardActionArea>
           <CardMedia
             component="img"
             src={MyPhoto}
-            alt="AIMS"
+            alt="WareTrack"
           />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div" id='lblTitle'> 
-              AIMS
+              WareTrack
             </Typography>
             <Typography variant="body2">
-            AIMS is a project of Golden Aurum System Solution Inc. During my internship, I was tasked with improving the system's responsiveness, designing the login page, and enhancing the error pages using React.js and Material UI.
+              WareTrack is a warehouse management system made by Aurumax Tech Solutions Inc. that uses RFID technology to help businesses track 
+              and manage their inventory more accurately and efficiently. It has both a web and mobile 
+              application, built with ReactJS for the web, and Xamarin with C# for mobile, with ASP.NET Core 
+              Web API handling the backend.
             </Typography>
 
           </CardContent>
@@ -29,4 +32,4 @@ function Aims() {
   );
 };
 
-export default Aims;
+export default WareTrack;
