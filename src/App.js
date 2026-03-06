@@ -12,11 +12,11 @@ import AboutMePage from './Components/Pages/About/AboutMe';
 import ProjectsPage from './Components/Pages/Project/Projects';
 import ResumePage from './Components/Pages/Resume/Resume';
 import QueueVistaDetails from './Components/Pages/Project/QueueVista/QueueVistaDetails';
-import AssetPRODetails from './Components/Pages/Project/AssetPRO/AssetPRODetails';
 import WareTrackDetails from './Components/Pages/Project/WareTrack/WareTrackDetails';
 import Footer from './Components/Layout/Footer';
 import Preloader from './Components/Layout/Pre';
 import ScrollToTop from './Components/Layout/ScrollToTop';
+import WeatherAppDetails from "./Components/Pages/Project/WeatherApp/WeatherAppDetails";
 
 function App() {
   const [load, updateLoad] = useState(true);
@@ -47,7 +47,7 @@ function App() {
               <Route path="/about-me" element={<AboutMePage />} />
               <Route path="/resume" element={<ResumePage />} />
               <Route path="/queuevista-details" element={<QueueVistaDetails />} />
-              <Route path="/assetpro-details" element={<AssetPRODetails />} />
+              <Route path="/weatherapp-details" element={<WeatherAppDetails />} />
               <Route path="/waretrack-details" element={<WareTrackDetails />} />
             </Routes>
 

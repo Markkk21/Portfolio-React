@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom';
 import Description from './Description';
 import DevTools from './DevTools';
 
-function WareTrackDetails() {
+function WeatherAppDetails() {
   return (
 
     <Container maxWidth={false} disableGutters id="containerAssetPRODetails">
@@ -49,7 +49,7 @@ function WareTrackDetails() {
           >
             Projects
           </MuiLink>
-          <Typography sx={{ color: '#d4af37' }}>WareTrack</Typography>
+          <Typography sx={{ color: '#d4af37' }}>WeatherApp</Typography>
         </Breadcrumbs>
 
         {/* Details */}
@@ -61,8 +61,8 @@ function WareTrackDetails() {
             mb={3}
           >
           <Typography variant='h2' textAlign='center' mb={2}>
-            <strong id='lblYellow'>WareTrack</strong>
-            <Typography variant='h5'>Warehouse Inventory Management System</Typography>
+            Weather<strong id='lblYellow'> App</strong>
+            <Typography variant='h5'>Real-Time Weather Forecast</Typography>
           </Typography>
           
         </Grid>
@@ -77,7 +77,7 @@ function WareTrackDetails() {
             flexDirection="column"
           >
             <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "2%", textAlign: {xs: "center"}}}>
-              Key <strong id='lblYellow'>Resposibilities</strong>
+              Description
             </Typography>
             
             <Description/>
@@ -94,23 +94,6 @@ function WareTrackDetails() {
               <strong id='lblYellow'>Dev </strong>Tools
             </Typography>
             <DevTools/>
-
-          </Grid>
-
-          <Grid            
-            item
-            xs={12}
-          >            
-            {/* <Typography variant="h3" whiteSpace="nowrap" sx={{marginBottom: "2%",textAlign: {xs: "center"}}}>
-              AIMS <strong id='lblYellow'>Modules</strong>
-            </Typography> */}
-          </Grid>
-
-          <Grid>
-            {/* <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "4%",textAlign: {xs: "center"}}}>
-              <strong id='lblYellow'>Dev </strong>Tools
-            </Typography>
-            <DevTools/> */}
           </Grid>
         </Grid>
       </Container>
@@ -118,4 +101,4 @@ function WareTrackDetails() {
   );
 }
 
-export default WareTrackDetails;
+export default WeatherAppDetails;

@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { Grid, Typography, Card, CardContent, CardMedia, CardActionArea } from '@mui/material';
-import MyPhoto from '../../../../img/AIMS/AIMS.png';
+import MyPhoto from '../../../../img/WareTrack/WareTrack.jpg';
 
 function WareTrack() {
   return (

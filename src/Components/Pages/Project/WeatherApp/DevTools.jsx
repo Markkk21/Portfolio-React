@@ -2,13 +2,8 @@ import React, { useEffect, useRef } from "react";
 import Grid from "@mui/material/Grid";
 
 import {
-  SiMui ,
-  SiReact ,
   SiVisualstudiocode,
-  SiFigma,
-  SiMysql
 } from "react-icons/si";
-
 import { 
   TbBrandXamarin,
   TbBrandCSharp } from "react-icons/tb";
@@ -19,12 +14,8 @@ function DevTools() {
 
   const techSkills = [
     { icon: <TbBrandCSharp />, key: "c#"},
-    { icon: <SiReact  />, key: "reactjs" },
-    { icon: <SiMui />, key: "mui" },
     { icon: <TbBrandXamarin />, key: "xamarin"},
     { icon: <SiVisualstudiocode />, key: "vscode" },
-    { icon: <SiFigma />, key: "figma" },
-    { icon: <SiMysql />, key: "mysql" },
   ];
 
 
