@@ -1,4 +1,4 @@
-import React, { useEffect, useRef } from "react";
+import React, { useEffect} from "react";
 import Grid from "@mui/material/Grid";
 
 import {
@@ -8,10 +8,12 @@ import {
   SiFigma,
   SiMysql
 } from "react-icons/si";
-
+import { BiRfid } from "react-icons/bi";
+import { CiBarcode } from "react-icons/ci";
 import { 
   TbBrandXamarin,
-  TbBrandCSharp } from "react-icons/tb";
+  TbBrandCSharp,
+  TbSdk } from "react-icons/tb";
 import useIntersectionObserver from '../../../Layout/Transition';
 
 function DevTools() {
@@ -23,6 +25,9 @@ function DevTools() {
     { icon: <SiMui />, key: "mui" },
     { icon: <TbBrandXamarin />, key: "xamarin"},
     { icon: <SiVisualstudiocode />, key: "vscode" },
+    { icon: <TbSdk />, key: "sdk" },
+    { icon: <BiRfid />, key: "rfid" },
+    { icon: <CiBarcode />, key: "barcode" },
     { icon: <SiFigma />, key: "figma" },
     { icon: <SiMysql />, key: "mysql" },
   ];
@@ -30,10 +35,16 @@ function DevTools() {
 
   useEffect(() => {
     const icons = document.querySelectorAll('.tech-icons');
-    icons.forEach(icon => observerRef.current.observe(icon));
-
+    const observer = observerRef.current;
+  
+    if (observer) {
+      icons.forEach(icon => observer.observe(icon));
+    }
+  
     return () => {
-      icons.forEach(icon => observerRef.current.unobserve(icon));
+      if (observer) {
+        icons.forEach(icon => observer.unobserve(icon));
+      }
     };
   }, [observerRef]);
 

@@ -8,7 +8,7 @@ function Github() {
   return (
     <Grid container justifyContent="center" sx={{ paddingBottom: "5%" }}>
       <Typography
-        variant="h3"
+        variant="h4"
         sx={{ paddingBottom: "20px", textAlign: { xs: "center" } }}
       >
         My Github <strong id="lblYellow">Calendar</strong>

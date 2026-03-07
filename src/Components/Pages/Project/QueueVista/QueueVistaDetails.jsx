@@ -68,7 +68,6 @@ function QueueVistaDetails() {
           
         </Grid>
 
-
         <Grid container justifyContent="center" spacing={3} >
           
           <Grid
@@ -77,12 +76,12 @@ function QueueVistaDetails() {
             display="flex"
             flexDirection="column"
           >
-            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "2%", textAlign: {xs: "center"}}}>
+            <Typography variant="h4" whiteSpace="nowrap" sx={{marginTop: "2%", textAlign: {xs: "center"}}}>
               Project <strong id='lblYellow'>Purpose</strong>
             </Typography>
             <Introduction/>
 
-            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "12%", textAlign: {xs: "center"}}}>
+            <Typography variant="h4" whiteSpace="nowrap" sx={{marginTop: "12%", textAlign: {xs: "center"}}}>
             <strong id='lblYellow'>Dev </strong>Tools
             </Typography>
             <DevTools/>
@@ -99,7 +98,7 @@ function QueueVistaDetails() {
           </Grid>
         </Grid>
 
-          <Typography variant='h3' textAlign='center' mb={2} mt={5}>
+          <Typography variant='h4' textAlign='center' mb={2} mt={5}>
             User <strong id='lblYellow'>Interface</strong>
           </Typography>
 

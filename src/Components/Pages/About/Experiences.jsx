@@ -9,13 +9,15 @@ export default function CustomizedTimeline() {
 
   useEffect(() => {
     const timelineElement = timelineRef.current;
-    if (timelineElement) {
-      observerRef.current.observe(timelineElement);
+    const observer = observerRef.current;
+  
+    if (timelineElement && observer) {
+      observer.observe(timelineElement);
     }
-
+  
     return () => {
-      if (timelineElement) {
-        observerRef.current.unobserve(timelineElement);
+      if (timelineElement && observer) {
+        observer.unobserve(timelineElement);
       }
     };
   }, [observerRef]);
@@ -24,7 +26,7 @@ export default function CustomizedTimeline() {
     <div ref={timelineRef} className="queuevista-timeline">
       <Timeline position="alternate">   
 
-        <Typography variant='h3' textAlign='center' >
+        <Typography variant='h4' textAlign='center' >
          <strong>Experiences</strong>
         </Typography>
 

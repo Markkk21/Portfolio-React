@@ -245,7 +245,12 @@
     }
 
     #projectBox {
-        margin-bottom: 10%;
+        margin-bottom: 10%;  height: 360px;              /* same height for all cards */
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        padding: 16px;
     }
     
     #containerAssetPRODetails {

@@ -38,7 +38,7 @@ const AboutMe = () => {
             paddingTop="30px"
             paddingBottom="50px"
           >
-            <Typography variant="h3" whiteSpace="nowrap" gutterBottom>
+            <Typography variant="h4" whiteSpace="nowrap" gutterBottom>
             Get to Know <strong id='lblYellow'>Me</strong>
             </Typography>
 
@@ -64,13 +64,13 @@ const AboutMe = () => {
 
         <Experiences/>
 
-        <Typography variant='h3' textAlign='center' mb={2} mt={3}>
+        <Typography variant='h4' textAlign='center' mb={2} mt={3}>
           Technical <strong id='lblYellow'>Skills </strong>
         </Typography>
 
         <Techstack/>
 
-        <Typography variant='h3' textAlign='center' mb={2}>
+        <Typography variant='h4' textAlign='center' mb={2}>
         <strong id='lblYellow'>Tools </strong>I use
         </Typography>
 

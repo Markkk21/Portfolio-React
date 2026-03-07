@@ -12,18 +12,23 @@ function WareTrack() {
           <CardMedia
             component="img"
             src={MyPhoto}
-            alt="WareTrack"
+            alt="WareTrack"            
+            sx={{
+              width: "100%",
+              height: "200px",
+              objectFit: "contain"
+            }}
           />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div" id='lblTitle'> 
               WareTrack
             </Typography>
-            <Typography variant="body2">
+            {/* <Typography variant="body2">
               WareTrack is a warehouse management system made by Aurumax Tech Solutions Inc. that uses RFID technology to help businesses track 
               and manage their inventory more accurately and efficiently. It has both a web and mobile 
               application, built with ReactJS for the web, and Xamarin with C# for mobile, with ASP.NET Core 
               Web API handling the backend.
-            </Typography>
+            </Typography> */}
 
           </CardContent>
         </CardActionArea>

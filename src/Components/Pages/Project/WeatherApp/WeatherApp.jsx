@@ -13,6 +13,11 @@ function WeatherApp() {
             component="img"
             src={MyPhoto}
             alt="WeatherApp"
+            sx={{
+              width: "100%",
+              height: "200px",
+              objectFit: "contain"
+            }}
           />
           <CardContent>
             <Typography gutterBottom variant="h6" component="div" id='lblTitle'> 

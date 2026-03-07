@@ -33,7 +33,7 @@ function UI() {
         flexDirection="column"
         alignItems="center"
       >
-        <Typography variant="h4" textAlign="center" mb={2} mt={1}>
+        <Typography variant="h5" textAlign="center" mb={2} mt={1}>
           Mobile
         </Typography>
         <QueueVistaPhotoMobile />
@@ -49,7 +49,7 @@ function UI() {
       >
         <Grid container alignItems="center" justifyContent="center">
           <Grid item>
-            <Typography variant="h4" textAlign="center" mb={2} mt={1} mr={2}>
+            <Typography variant="h5" textAlign="center" mb={2} mt={1} mr={2}>
               Desktop
             </Typography>
           </Grid>
@@ -128,7 +128,7 @@ function UI() {
           flexDirection="column"
           alignItems="center"
         >
-          <Typography variant="h4" textAlign="center" mb={2} mt={1}>
+          <Typography variant="h5" textAlign="center" mb={2} mt={1}>
             External Monitor
           </Typography>
           <Card id='photoBox'>

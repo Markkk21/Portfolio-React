@@ -67,6 +67,28 @@ function WareTrackDetails() {
           
         </Grid>
 
+        <Grid
+            item
+            display="flex"
+            flexDirection="column"
+            alignItems="center"
+            mb={3}
+          >
+          <Typography variant='h4' textAlign='center' mb={2}>
+            Description
+          </Typography>
+          <Typography variant="body1" sx={{ textAlign: { xs: 'center', lg: 'left' }}}>
+            <Typography variant="h6">
+            <strong id='lblYellow'>WareTrack</strong> is a warehouse management system made by Aurumax Tech Solutions Inc. that uses 
+            <strong id='lblYellow'> RFID</strong> technology to help businesses track 
+              and manage their inventory more accurately and efficiently. It has both a web and mobile 
+              application, built with ReactJS for the web, and Xamarin with C# for mobile, with ASP.NET Core 
+              Web API handling the backend.
+            </Typography>
+          </Typography>
+          
+        </Grid>
+
 
         <Grid container justifyContent="center" spacing={3} >
           
@@ -76,7 +98,7 @@ function WareTrackDetails() {
             display="flex"
             flexDirection="column"
           >
-            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "2%", textAlign: {xs: "center"}}}>
+            <Typography variant="h4" whiteSpace="nowrap" sx={{marginTop: "2%", textAlign: {xs: "center"}}}>
               Key <strong id='lblYellow'>Resposibilities</strong>
             </Typography>
             
@@ -90,7 +112,7 @@ function WareTrackDetails() {
             display="flex"
             flexDirection="column"
           >
-            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "4%",textAlign: {xs: "center"}}}>
+            <Typography variant="h4" whiteSpace="nowrap" sx={{marginTop: "4%",textAlign: {xs: "center"}}}>
               <strong id='lblYellow'>Dev </strong>Tools
             </Typography>
             <DevTools/>

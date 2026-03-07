@@ -76,7 +76,7 @@ function WeatherAppDetails() {
             display="flex"
             flexDirection="column"
           >
-            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "2%", textAlign: {xs: "center"}}}>
+            <Typography variant="h4" whiteSpace="nowrap" sx={{marginTop: "2%", textAlign: {xs: "center"}}}>
               Description
             </Typography>
             
@@ -90,7 +90,7 @@ function WeatherAppDetails() {
             display="flex"
             flexDirection="column"
           >
-            <Typography variant="h3" whiteSpace="nowrap" sx={{marginTop: "4%",textAlign: {xs: "center"}}}>
+            <Typography variant="h4" whiteSpace="nowrap" sx={{marginTop: "4%",textAlign: {xs: "center"}}}>
               <strong id='lblYellow'>Dev </strong>Tools
             </Typography>
             <DevTools/>
